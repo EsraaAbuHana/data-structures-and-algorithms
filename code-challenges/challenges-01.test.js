@@ -60,13 +60,20 @@ Then, write a function named `speaker` that takes in an array of strings and a c
 
 Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
 ------------------------------------------------------------------------------------------------ */
-
+let newArr4=[]
 const greeting = (word) => {
   // Solution code here...
+  return word.toUpperCase()+'!';
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
+  
+  words.forEach(element => {
+    newArr4.push(callback(element));
+    
+  });
+  return newArr4;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,13 +91,19 @@ Within the addNumbers function, invoke the callback function as many times as ne
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
-
+// let newArr5=[];
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  // let times=times;
+  // arr.forEach(times => {
+  //   callback(newArr5,num);
+  // });
+  // return newArr5;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -110,10 +123,22 @@ The inventory is formatted like this:
 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
+// let storeArr=[];
+// (productName,available)=>{
+//   this.productName=name;
+//   this.available=available;
+// };
+// const createList = (availableItems) => {
+//   // Solution code here...
+//  availableItems.forEach(element => {
+//    if (available) {
+//      storeArr.push(element);
+     
+//    }
+//    return storeArr;
+//  });
 
-const createList = (availableItems) => {
-  // Solution code here...
-};
+// };
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
