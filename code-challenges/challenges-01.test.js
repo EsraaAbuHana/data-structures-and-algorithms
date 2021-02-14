@@ -33,9 +33,6 @@ arr.forEach(element => {
 return newArr2;
 };
 
-// expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
-// });
-// });
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -43,9 +40,15 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
-
+let newArr3=[];
 const allUpperCase = (arr) => {
   // Solution code here...
+  arr.forEach(element => {
+    newArr3.push(element.toUpperCase());
+    
+  });
+  return newArr3;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
