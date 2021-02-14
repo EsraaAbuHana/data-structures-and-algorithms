@@ -23,11 +23,19 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
-
+let newArr2=[];
 const addExclamation = (arr) => {
   // Solution code here...
+arr.forEach(element => {
+  newArr2.push(element+'!');
+  
+});
+return newArr2;
 };
 
+// expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
+// });
+// });
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
