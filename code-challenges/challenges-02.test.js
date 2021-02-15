@@ -43,13 +43,15 @@ const a = [1, 2, 3];
 appendFirstToLast(a);
 console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
-// let arr3=[];
-// const appendFirstToLast = (arr) => {
-//   // Solution code here...
-//   arr.forEach(element => {
-//     arr3.push();
+let arr3=[];
+const appendFirstToLast = (arr) => {
+  // Solution code here...
+  // arr.forEach(element => {
+    arr3=arr;
+    arr3=arr+arr[0];
 // });
-// }
+
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
