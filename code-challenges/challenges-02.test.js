@@ -24,10 +24,11 @@ CHALLENGE 2
 Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
 
 ------------------------------------------------------------------------------------------------ */
-l
+
 const appendTheEnd = (str) => {
   // Solution code here...
-
+let newStr=str+' The end.';
+return newStr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -42,10 +43,13 @@ const a = [1, 2, 3];
 appendFirstToLast(a);
 console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
-
-const appendFirstToLast = (arr) => {
-  // Solution code here...
-};
+// let arr3=[];
+// const appendFirstToLast = (arr) => {
+//   // Solution code here...
+//   arr.forEach(element => {
+//     arr3.push();
+// });
+// }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
