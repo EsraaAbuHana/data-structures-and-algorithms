@@ -54,9 +54,12 @@ CHALLENGE 4
 Write a function named containsWorld that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains the word 'world' all in lower-case letters, and false if the input does not.
 
 ------------------------------------------------------------------------------------------------ */
-
+let c;
 const containsWorld = (input) => {
   // Solution code here...
+  let regex1 = /(world)\b/g;
+  c = regex1.test(input);
+  return c;
 };
 
 /* ------------------------------------------------------------------------------------------------
