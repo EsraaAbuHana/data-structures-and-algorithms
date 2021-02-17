@@ -110,6 +110,8 @@ Do not use the vertical bar (pipe) in your pattern.
 
 const matchMonth = (input) => {
   // Solution code here...
+   if(input===/October$/gi||input===/Oct$/gi){   return true ;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
