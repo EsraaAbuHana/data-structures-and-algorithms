@@ -40,9 +40,12 @@ For example:
 'h3llo world' returns true
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
-
+let b;
 const isNum = (input) => {
   // Solution code here...
+  let regex1 = /\d/g;
+  b = regex1.test(input);
+  return b;
 };
 
 /* ------------------------------------------------------------------------------------------------
