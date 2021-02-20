@@ -34,11 +34,13 @@ CHALLENGE 2
 Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index. 
 ------------------------------------------------------------------------------------------------ */
 let arr2=[];
+let array=[];
 const removeThree = (idx, arr) => {
   // Solution code here...
-
- arr2= arr.splice(idx,idx+2);
-return arr2;
+  arr2= arr.splice(idx,idx+1);
+  //  console.log(arr);
+  array=arr;
+  return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
