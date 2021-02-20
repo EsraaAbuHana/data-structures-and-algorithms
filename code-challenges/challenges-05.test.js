@@ -23,9 +23,13 @@ let starWarsPeople = [
     "eye_color": "red"
   }
 ];
-
+let sorted=[];
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
+  
+//    let x= starWarsArr.sort(a, b) =>{
+//     return a.height - b.height;    
+// };
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,17 +73,16 @@ For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
+let result = [];
 const howMuchPencil = (str) => {
-  let result = [];
   let arr=str.split('');
-  // Solution code here...
-  for (let index = 0; index < arr.length; index++) {
-     result.push(arr[index]);
-     arr.shift();
-  }
-
+  for (let index = 0; index <= arr.length; index++) {
+    result.push(str.slice(index,arr.length)) ;
+    }
   return result;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -171,6 +174,7 @@ Return a new array containing just the verbs. For example, ['Mix until evenly di
 const stepActions = (recipe) => {
   let result = [];
   // Solution code here...
+    result = recipe.join(' ');  
   return result;
 };
 
@@ -186,9 +190,15 @@ For example:
   removeEvenValues(integers);
   console.log(integers) will print [1, 3, 5]
 ------------------------------------------------------------------------------------------------ */
-
+let arr9=[];
 const removeEvenValues = (arr) => {
   // Solution code here...
+  arr.forEach(element => {
+    if (element%2==0) {
+let x=arr.splice(element)
+    }
+    
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
