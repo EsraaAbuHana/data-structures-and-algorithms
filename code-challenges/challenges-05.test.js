@@ -37,7 +37,7 @@ let arr2=[];
 const removeThree = (idx, arr) => {
   // Solution code here...
 
-let arr2= arr.splice(idx,idx+3);
+ arr2= arr.splice(idx,idx+2);
 return arr2;
 };
 
@@ -50,7 +50,7 @@ let arr3=[];
 const joinArray = (arr) => {
   // Solution code here...
 
-  let arr3 = arr.join(' ');
+  arr3 = arr.join(' ');
   return arr3;
 };
 
@@ -69,7 +69,13 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
+  let arr=str.split('');
   // Solution code here...
+  for (let index = 0; index < arr.length; index++) {
+     result.push(arr[index]);
+     arr.shift();
+  }
+
   return result;
 };
 
@@ -80,9 +86,12 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
-
+let a=[];
 const wordsToCharList = (arr) => {
   // Solution code here...
+  a =arr.split('');
+return a;
+
 };
 
 
