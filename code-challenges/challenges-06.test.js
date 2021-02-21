@@ -87,6 +87,18 @@ Write a function named checkValues that takes in an object and a value and retur
 
 const checkValues = (obj, value) => {
   // Solution code here...
+  if (Object.values(obj)===value){
+    return true;
+  }
+  else{
+    return false;
+  }
+
+  //  (Object.key(obj).forEach(element=> {
+  //   if (element===value) {
+  //     return true ;
+  //   }
+  // });
 };
 
 /* ------------------------------------------------------------------------------------------------
