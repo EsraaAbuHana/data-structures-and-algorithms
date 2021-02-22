@@ -5,9 +5,14 @@ CHALLENGE 1 - Review
 
 Write a function named replaceZeros that, given a string, uses Regex to replace all '0' with the word 'zero'. 
 ------------------------------------------------------------------------------------------------ */
+// let x='';
 
 const replaceZeros = (string) => {
   // Solution code here...
+  // x=string.split('0').join('zero'); 
+ 
+  // return x;
+  return string.split('0').join('zero'); 
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,6 +72,7 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
