@@ -72,7 +72,16 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+let toArr = arr.split('0');
+toArr.forEach(element => {
+  if (element=='0'){
+    element==='zero';
+  }
+  
+});
 
+  let toString=toArr.join('zero');
+return toString;
 };
 
 /* ------------------------------------------------------------------------------------------------
