@@ -60,7 +60,7 @@ const addPurchases = (arr) => {
   },0);
  
   return sum;
-};
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -72,7 +72,13 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
-};
+  let sum = arr.reduce((acc,val,idx)=>{
+    acc++ ;
+    return acc;
+  },0);
+  return sum;
+
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
