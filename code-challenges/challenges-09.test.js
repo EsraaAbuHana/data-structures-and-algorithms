@@ -37,7 +37,7 @@ const addValues = (arr) => {
     return acc;
   },0);
 return sum;
-};
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -53,6 +53,13 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 const addPurchases = (arr) => {
   // Solution code here...
+
+  let sum= arr.reduce((acc,val,idx)=>{
+    acc = acc+val.purchasePrice;
+    return acc;
+  },0);
+ 
+  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
