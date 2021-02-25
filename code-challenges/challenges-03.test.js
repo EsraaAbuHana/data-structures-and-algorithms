@@ -107,9 +107,20 @@ In this alphabetization, capital letters come before lower case letters.
 
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
-
+let newArr5=[];
 const alphabetize = (arr) => {
   // Solution code here...
+  newArr5=   arr.sort((a,b) => {
+    if (a.toUpperCase() < b.toUpperCase()){
+     
+      return 1;
+    }
+     else if (a.toUpperCase() > b.toUpperCase()) return -1;
+     else return 0;
+ });
+
+return newArr5;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -168,7 +179,7 @@ CHALLENGE 10 - Stretch Goal
 
 Write a function named sortPeople that takes in an array of Person objects, each of which has firstName, lastName, and age properties, and sorts those people by their last names. Do not worry about capitalization or first names.
 ------------------------------------------------------------------------------------------------ */
-
+let newArr8=[];
 function Person(firstName, lastName, age) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -183,6 +194,15 @@ const people = [
 
 const sortPeople = (arr) => {
   // Solution code here...
+  newArr8=   arr.sort((a,b) => {
+    if (a.lastName.toUpperCase() < b.lastName.toUpperCase()){
+      return 1;
+    }
+     else if (a.lastName.toUpperCase() > b.lastName.toUpperCase()) return -1;
+     else return 0;
+ });
+
+return newArr8;
 };
 
 /* ------------------------------------------------------------------------------------------------
