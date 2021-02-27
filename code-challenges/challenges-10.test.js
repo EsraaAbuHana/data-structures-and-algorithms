@@ -21,14 +21,14 @@ For example:
 
 Returns: ['dyoll', 'eimaj'];
 ------------------------------------------------------------------------------------------------ */
-let newArr=[];
+let newArr = [];
 const getNames = (arr) => {
   // Solution code here...
-  
-  newArr=arr.map(arr => arr.name.split('').reverse().join(''));
+
+  newArr = arr.map(arr => arr.name.split('').reverse().join(''));
   //    newArr.forEach(element => {
   //     return element;
-  
+
   // console.log(element);
   //   });
   return newArr;
@@ -46,9 +46,9 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 let newArray1;
 const count = (target, input) => {
   // Solution code here...
- 
+
   let newArray = input.toString().split(',');
-  newArray1=newArray.filter(item => item==target);
+  newArray1 = newArray.filter(item => item == target);
   console.log(newArray);
   return newArray1.length;
 };
@@ -65,9 +65,9 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 let newArray3;
 const totalSum = (input) => {
   // Solution code here...
-  
-  let newArray = input.toString().split(',').map(i=>Number(i));
-  newArray3=newArray.reduce((sum, current) => sum + current, 0);
+
+  let newArray = input.toString().split(',').map(i => Number(i));
+  newArray3 = newArray.reduce((sum, current) => sum + current, 0);
   // console.log(typeof newArray);
   // console.log(typeof newArray3);
   return newArray3;
@@ -84,12 +84,24 @@ This function should then raise 2 to the power of the resulting numbers, returni
 
 For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
-
+let newArray5 = [];
+let modifiedArray5 = [];
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
-  array.forEach(element => {
-    
-  });
+  // modifiedArray5 = input.toString().split(',').map(i => Number(i)).filter(Number);
+  // console.log(input);
+
+  // modifiedArray5 = input.forEach(element => {
+  //   // newArray5 = element.filter(element%5  == 0);
+  //   // newArray5 = element.reduce(element%5  == 0);
+  //   element = Math.pow(2, element.reduce((a, b) => a + b));
+  //   console.log(element);
+  //   // return );
+  // });
+  // //  console.log(input);
+  // console.log(newArray5);
+
+  return modifiedArray5;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -181,7 +193,7 @@ Run your tests from the console: jest challenges-10.test.js
 
 describe('Testing challenge 1', () => {
   test('It returns an array of names reversed', () => {
-    expect(getNames([{name:'lloyd', age: 32, shoeSize: 12}, {name:'jamie', age:21, shoeSize: 8}])).toStrictEqual(['dyoll', 'eimaj']);
+    expect(getNames([{ name: 'lloyd', age: 32, shoeSize: 12 }, { name: 'jamie', age: 21, shoeSize: 8 }])).toStrictEqual(['dyoll', 'eimaj']);
     expect(getNames([])).toStrictEqual([]);
   });
 });
