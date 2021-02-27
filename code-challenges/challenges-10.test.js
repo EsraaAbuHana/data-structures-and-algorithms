@@ -25,8 +25,13 @@ let newArr=[];
 const getNames = (arr) => {
   // Solution code here...
   
-  newArr=arr.map(arr => arr.name);
-return newArr;
+  newArr=arr.map(arr => arr.name.split('').reverse().join(''));
+  //    newArr.forEach(element => {
+  //     return element;
+  
+  // console.log(element);
+  //   });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,6 +87,9 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  array.forEach(element => {
+    
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
