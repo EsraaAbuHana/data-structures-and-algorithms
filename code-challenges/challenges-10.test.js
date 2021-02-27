@@ -61,11 +61,11 @@ let newArray3;
 const totalSum = (input) => {
   // Solution code here...
   
-  // let newArray = input.toString().split(',').map(i=>Number(i));
-  // newArray3=newArray.reduce((sum, current) => sum + current, 0);
-  // // console.log(typeof newArray);
-  // // console.log(typeof newArray3);
-  // return newArray3;
+  let newArray = input.toString().split(',').map(i=>Number(i));
+  newArray3=newArray.reduce((sum, current) => sum + current, 0);
+  // console.log(typeof newArray);
+  // console.log(typeof newArray3);
+  return newArray3;
 };
 
 /* ------------------------------------------------------------------------------------------------
