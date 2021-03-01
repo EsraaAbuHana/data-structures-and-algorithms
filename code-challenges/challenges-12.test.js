@@ -61,6 +61,14 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+  for (var i = 0; i < matrix.length; i++) {
+		var max = [0][0];
+		for (var j = 0; j < matrix[i].length; j++) {
+			// if (matrix[i][j] > max) {
+				max = max+matrix[i][j];
+			// }
+		}
+    	return max;
 };
 
 
@@ -88,7 +96,24 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
+  for (var i = 0; i < stores.length; i++) {
+		max = 0;
+		for (var j = 0; j < stores[i].length; j++) {
+			// if (stores[i][j] > max) {
+				max = max+stores[i][j];
+			// }    
+        //  i++;
+      //  console.log(max);
+arr[i]=max;
+        // console.log(arr);
+		// return max;
 
+    }
+    		
+arr.push(max);
+j=0;
+	}
+return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
