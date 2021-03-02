@@ -40,6 +40,8 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
   // Solution code here...
+  let newArr3 = arr.filter(n => n.includes('and'));
+  return newArr3;
 };
 
 /* ------------------------------------------------------------------------------------------------
