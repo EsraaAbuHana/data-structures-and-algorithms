@@ -18,13 +18,14 @@ Write a function named typeNum that, given an array as input, uses filter to ret
 
 For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
-
+var num;
 const typeNum = (arr) => {
   // Solution code here...
-  let arrNum = arr.filter((n,i)=>{
-    return (typeof n!="string");
-  })
-  return arrNum;
+
+  num = arr.filter(function (item) {
+    return (parseInt(item) == item);
+  });
+  return num;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,11 +38,6 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
   // Solution code here...
-  // let arrNum = arr.filter((n,i)=>{
-  //   // let checkAnd=n=/and*/g;
-  //   return (n.match(/and*/g));
-  // })
-  // return arrNum;
 };
 
 /* ------------------------------------------------------------------------------------------------
