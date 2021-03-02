@@ -54,6 +54,8 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
   // Solution code here...
+  let newArr4 = arr.filter(n => (n % 2 )!== 0);
+  return newArr4;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,6 +71,8 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 const filterStringsWithVowels = (arr) => {
   // Solution code here...
+  // /[aeiou]/g
+
 };
 
 
