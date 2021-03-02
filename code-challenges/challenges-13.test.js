@@ -39,6 +39,11 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
+  let newArr = arr.filter (name => {
+    if(name.toLowerCase().includes(':)')) return true;
+    // return name.toLowerCase().includes('al'); //chaining
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
