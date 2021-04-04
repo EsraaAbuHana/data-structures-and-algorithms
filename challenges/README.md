@@ -9,3 +9,7 @@ just revers it :take your final index of original array and set it as the initia
 
 ## Solution
 ![](assets/WB-CC01.jpeg)
+
+- [x] WB
+- [x] Functionality 
+- [x] Readme File 
