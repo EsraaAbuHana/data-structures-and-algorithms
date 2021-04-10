@@ -9,4 +9,4 @@ you will take  a sorted array and the search key, to check out if that key is ex
 
 
 ## Solution
-![](/challenges/ArrayShift/assest/CC02.jpeg)
+![](/challenges/BinarySearch/assest/WBCC03.jpeg)
