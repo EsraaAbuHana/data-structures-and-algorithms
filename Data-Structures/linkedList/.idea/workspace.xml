@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc940f9b-1c5b-4a0a-a733-62267ffdbce8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -204,7 +202,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
-          <line>74</line>
+          <line>76</line>
           <properties class="linkedList.LinkedList" method="append">
             <option name="EMULATED" value="true" />
           </properties>
