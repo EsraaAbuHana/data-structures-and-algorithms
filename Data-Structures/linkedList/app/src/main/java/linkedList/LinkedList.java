@@ -16,7 +16,8 @@ public class LinkedList {
     linkedList.insertAfter(5, 2);
 
     System.out.println(linkedList.toString());
-
+//linkedList.findK(2);
+    System.out.println("Node of K :"+linkedList.findNodeK(1));
 
   }
 
@@ -128,26 +129,53 @@ public class LinkedList {
     }
 
   }
-
-  public int findK(int k) {
+//k is the index from the last
+  public int findNodeK(int k) {
     int counter = 0;
     int counterReverse = 0;
 
     Node current = this.head;
-    while (current.next == null) {
-
-      if (k != counterReverse) {
-current.next=head;
-head=current;
-               counterReverse++;
-
-      } else {
-        break;
-
-      }
+//    Node next=current.next;
+//    while (current.next == null) {
+//
+//      if (k != counterReverse) {
+//=head;
+//        current.next=null;
+//               counterReverse++;
+//
+//      } else {
+//        break;
+//
+//      }
+//    }
+//    return current.val;
+//
+    while (current.next!=null) {
+      current = current.next;
+    counter++;
+//      System.out.println(current);
     }
-    return current.val;
+    System.out.println("counter : "+counter);//5
+counterReverse=counter-k;
+counter=0;
+current=this.head;
+    System.out.println(counter);
+    System.out.println(counterReverse);
+    while (current.next!=null) {
+      if(counterReverse==counter){
+        break;
+      }
+      current = current.next;
+      counter++;
+    }
+return current.val;
+    //    while (current.next!=null&&counterReverse==counter) {
+//      current = current.next;
+//      counter++;
+//      System.out.println(current);
+//    }
 
-  }
+//      System.out.println(current);
+ }
 }
 

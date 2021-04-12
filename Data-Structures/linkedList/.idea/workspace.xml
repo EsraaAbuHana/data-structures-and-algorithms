@@ -202,19 +202,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
-          <line>76</line>
+          <line>77</line>
           <properties class="linkedList.LinkedList" method="append">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
-          <line>3</line>
-          <properties class="linkedList.LinkedList" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
