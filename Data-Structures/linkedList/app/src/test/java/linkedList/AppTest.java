@@ -26,4 +26,16 @@ public class AppTest {
 
 
   }
+//  @Test public void testToStringMethod() {
+//    LinkedList classUnderTest = new LinkedList();
+//    classUnderTest.insert(7);
+//    classUnderTest.insert(8);
+//    classUnderTest.toString();
+//    String testString="{8}->{7}->Null";
+////    assertEquals("the value that insert is inclode ", true,classUnderTest.includes(7));
+//    assertEquals("",testString,classUnderTest.toString());
+//
+//
+//  }
+
 }

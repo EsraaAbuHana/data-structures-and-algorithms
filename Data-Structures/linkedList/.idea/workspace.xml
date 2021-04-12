@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc940f9b-1c5b-4a0a-a733-62267ffdbce8" name="Default Changelist" comment="" />
+    <list default="true" id="cc940f9b-1c5b-4a0a-a733-62267ffdbce8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,12 +59,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$/app/src/main/java/linkedList" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/linkedList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.testToStringMethod">
+  <component name="RunManager" selected="Application.LinkedList">
     <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedList.LinkedList" />
       <module name="linkedList.app.main" />
@@ -154,9 +161,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.LinkedList" />
       <item itemvalue="Gradle.linkedList:app" />
       <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
-      <item itemvalue="Application.LinkedList" />
       <item itemvalue="Gradle.AppTest.testInclodesMethod" />
       <item itemvalue="Gradle.AppTest.testToStringMethod" />
     </list>
@@ -190,17 +197,26 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
-          <line>19</line>
-          <properties class="linkedList.LinkedList" method="insert">
+          <line>74</line>
+          <properties class="linkedList.LinkedList" method="append">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
+          <line>3</line>
+          <properties class="linkedList.LinkedList" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
