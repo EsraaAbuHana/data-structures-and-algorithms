@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc940f9b-1c5b-4a0a-a733-62267ffdbce8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/ArrayShift/.idea/workspace.xml" afterDir="false" />
@@ -64,7 +62,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.LinkedList">
+  <component name="RunManager" selected="Gradle.AppTest.testFindNodeK">
     <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedList.LinkedList" />
       <module name="linkedList.app.main" />
@@ -84,6 +82,27 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.testAppHasAGreeting&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.testFindNodeK" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.testFindNodeK&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -166,9 +185,11 @@
       <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
       <item itemvalue="Gradle.AppTest.testInclodesMethod" />
       <item itemvalue="Gradle.AppTest.testToStringMethod" />
+      <item itemvalue="Gradle.AppTest.testFindNodeK" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.testFindNodeK" />
         <item itemvalue="Gradle.AppTest.testToStringMethod" />
         <item itemvalue="Gradle.AppTest.testInclodesMethod" />
         <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
@@ -204,19 +225,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
-          <line>74</line>
+          <line>77</line>
           <properties class="linkedList.LinkedList" method="append">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
-          <line>3</line>
-          <properties class="linkedList.LinkedList" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
