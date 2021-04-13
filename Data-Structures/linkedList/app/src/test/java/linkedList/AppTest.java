@@ -30,7 +30,7 @@ public class AppTest {
   public void testFindNodeK(){
     LinkedList linkedList = new LinkedList();
     linkedList.insert(7);
-/
+
     linkedList.insert(8);
 
     linkedList.append(5);
