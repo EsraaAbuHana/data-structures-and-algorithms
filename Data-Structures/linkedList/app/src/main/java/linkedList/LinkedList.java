@@ -12,6 +12,11 @@ public class LinkedList {
     System.out.println(linkedList.includes(8));
 
   }
+
+  ///////////////////////////////////////////////////////////////////
+//  public static LinkedList zipLists(LinkedList one, LinkedList two){
+//
+//  }
   public Node head;
   public LinkedList(){
    this.head=null;
@@ -60,6 +65,14 @@ public class LinkedList {
     }
 return linkedListValues+"Null";
   }
-
+//here start write zipLists
+//zipLists which takes two linked lists as arguments.
+// Zip the two linked lists together into one so that the
+// nodes alternate between the two lists and return a reference to the
+// head of the zipped list.
+//  public void zipLists(list1, list2){
+//    Node curent=this.head;
+//    String linkedListValues="";
+//  }
 }
 
