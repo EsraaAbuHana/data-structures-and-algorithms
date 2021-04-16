@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c3f790-81c2-4d60-825e-3a8e98cacd56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ArrayReverse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ArrayReverse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/WB-CC01.jpeg" beforeDir="false" />
-    </list>
+    <list default="true" id="92c3f790-81c2-4d60-825e-3a8e98cacd56" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/401/java-fundamentals/linter" />
   </component>
   <component name="RunManager" selected="Application.ArrayShift">
     <configuration name="ArrayShift" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -141,6 +136,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ArrayShift$ArrayShiftTest_testInsertShiftArray.ic" NAME="ArrayShiftTest.testInsertShiftArray Coverage Results" MODIFIED="1618008625053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
