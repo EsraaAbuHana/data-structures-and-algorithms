@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c3f790-81c2-4d60-825e-3a8e98cacd56" name="Default Changelist" comment="" />
+    <list default="true" id="256b4ae3-e133-41cf-b8fa-a45e9941a1fe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,27 +15,44 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1qwyfjdlyrc5Ae0yBFVNAnQ0P5n" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1rCicNbAw2QSEgotATVRA2SQmW3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/401/java-fundamentals/linter" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/401/quotes" />
   </component>
-  <component name="RunManager" selected="Application.ArrayShift">
-    <configuration name="ArrayShift" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArrayShift.ArrayShift" />
-      <module name="ArrayShift.lib.main" />
+  <component name="RunManager" selected="Gradle.LibraryTest">
+    <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stacksandqueues.Library" />
+      <module name="stacksandqueues.lib.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArrayShift.*" />
+          <option name="PATTERN" value="stacksandqueues.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -43,12 +60,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayShiftTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ArrayShift.ArrayShiftTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -64,12 +81,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ArrayShiftTest.testInsertShiftArray" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testQueue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ArrayShift.ArrayShiftTest.testInsertShiftArray&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.testQueue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -85,12 +102,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ArrayShiftTest.testSomeLibraryMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testStack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ArrayShift.ArrayShiftTest.testSomeLibraryMethod&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.testStack&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -108,21 +125,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ArrayShiftTest.testInsertShiftArray" />
-        <item itemvalue="Gradle.ArrayShiftTest.testSomeLibraryMethod" />
-        <item itemvalue="Gradle.ArrayShiftTest" />
-        <item itemvalue="Application.ArrayShift" />
+        <item itemvalue="Gradle.LibraryTest" />
+        <item itemvalue="Gradle.LibraryTest.testQueue" />
+        <item itemvalue="Gradle.LibraryTest.testStack" />
+        <item itemvalue="Application.Library" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="92c3f790-81c2-4d60-825e-3a8e98cacd56" name="Default Changelist" comment="" />
-      <created>1618005053636</created>
+      <changelist id="256b4ae3-e133-41cf-b8fa-a45e9941a1fe" name="Default Changelist" comment="" />
+      <created>1618486552125</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618005053636</updated>
+      <updated>1618486552125</updated>
     </task>
     <servers />
   </component>
@@ -137,8 +154,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ArrayShift$ArrayShiftTest_testInsertShiftArray.ic" NAME="ArrayShiftTest.testInsertShiftArray Coverage Results" MODIFIED="1618008625053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -26,4 +26,35 @@ public class AppTest {
 
 
   }
+  @Test
+  public void testFindNodeK(){
+    LinkedList linkedList = new LinkedList();
+    linkedList.insert(7);
+
+    linkedList.insert(8);
+
+    linkedList.append(5);
+    linkedList.append(6);
+    linkedList.insertBefore(6, 9);
+    linkedList.insertAfter(5, 2);
+
+//    System.out.println(linkedList.toString());
+//linkedList.findK(2);
+    System.out.println("Node of K :"+linkedList.findNodeK(1));
+//    assertTrue(true);
+    assertEquals(9,linkedList.findNodeK(1));
+  }
+
+//  @Test public void testToStringMethod() {
+//    LinkedList classUnderTest = new LinkedList();
+//    classUnderTest.insert(7);
+//    classUnderTest.insert(8);
+//    classUnderTest.toString();
+//    String testString="{8}->{7}->Null";
+////    assertEquals("the value that insert is inclode ", true,classUnderTest.includes(7));
+//    assertEquals("",testString,classUnderTest.toString());
+//
+//
+//  }
+
 }
