@@ -145,25 +145,10 @@ LinkedList linkedList2=new LinkedList();
     int counterReverse = 0;
 
     Node current = this.head;
-//    Node next=current.next;
-//    while (current.next == null) {
-//
-//      if (k != counterReverse) {
-//=head;
-//        current.next=null;
-//               counterReverse++;
-//
-//      } else {
-//        break;
-//
-//      }
-//    }
-//    return current.val;
-//
+
     while (current.next!=null) {
       current = current.next;
     counter++;
-//      System.out.println(current);
     }
     System.out.println("counter : "+counter);//5
 counterReverse=counter-k;
@@ -179,38 +164,60 @@ current=this.head;
       counter++;
     }
 return current.val;
-    //    while (current.next!=null&&counterReverse==counter) {
+ }
+  public static LinkedList zipLists(LinkedList firstList, LinkedList secondList) {
+    Node firstCurrent = firstList.head;
+    Node secondCurrent = secondList.head;
+    Node firstNext;
+    Node secondNext;
+    if (firstCurrent == null) {
+      return secondList;}
+    if (secondCurrent == null){
+      return firstList;
+    }
+    while(firstCurrent != null && secondCurrent != null){
+      firstNext = firstCurrent.next;
+      secondNext = secondCurrent.next;
+      firstCurrent.next = secondCurrent;
+      firstCurrent = firstNext;
+      if (firstCurrent == null){
+        break;}
+      secondCurrent.next = firstCurrent;
+      secondCurrent = secondNext;
+      if (secondCurrent == null) {
+        break;
+      }
+    }
+    return firstList;
+  }
+
+//    Node current = firstList.head;
+//    Node insert = secondList.head;
+//    int counter  = 0;
+//
+//    if (current == null) {
+//      return secondList.head;
+//    }
+//    if (insert == null) {
+//      return firstList.head;
+//    }
+//
+//    while(current != null && insert != null) {
+//
+//        firstList.insertAfter(current.val, insert.val);
+//        insert = insert.next;
+//
 //      current = current.next;
 //      counter++;
-//      System.out.println(current);
 //    }
-
-//      System.out.println(current);
- }
-  public static Node zipLists(LinkedList firstList, LinkedList secondList) {
-    Node current = firstList.head;
-    Node insert = secondList.head;
-    int counter  = 0;
-
-    if (current == null) {
-      return secondList.head;
-    }
-
-    while(current != null && insert != null) {
-      if (counter % 2 == 0) {
-        firstList.insertAfter(current.val, insert.val);
-        insert = insert.next;
-      }
-      current = current.next;
-      counter++;
-    }
-    if (current == null && insert != null) {
-      while (insert != null) {
-        firstList.append(insert.val);
-        insert = insert.next;
-      }
-    }
-    return firstList.head;
-  }
+//    if (current == null && insert != null) {
+//      while (insert != null) {
+//        firstList.append(insert.val);
+//        insert = insert.next;
+//      }
+//    }
+//    return firstList.head;
 }
+
+
 
