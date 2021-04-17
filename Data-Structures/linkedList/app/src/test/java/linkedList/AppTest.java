@@ -4,6 +4,8 @@
 package linkedList;
 
 import org.junit.Test;
+
+import static linkedList.LinkedList.zipLists;
 import static org.junit.Assert.*;
 
 public class AppTest {
@@ -45,16 +47,22 @@ public class AppTest {
     assertEquals(9,linkedList.findNodeK(1));
   }
 
-//  @Test public void testToStringMethod() {
-//    LinkedList classUnderTest = new LinkedList();
-//    classUnderTest.insert(7);
-//    classUnderTest.insert(8);
-//    classUnderTest.toString();
-//    String testString="{8}->{7}->Null";
-////    assertEquals("the value that insert is inclode ", true,classUnderTest.includes(7));
-//    assertEquals("",testString,classUnderTest.toString());
-//
-//
-//  }
+@Test
+  public void testZipLists(){
+  LinkedList linkedList1=new LinkedList();
+  linkedList1.insert(1);
+  linkedList1.append(2);
+  linkedList1.append(3);
+  LinkedList linkedList2=new LinkedList();
+  linkedList2.insert(20);
+  linkedList2.append(30);
+  linkedList2.append(40);
+  System.out.println("linked List 1 : "+linkedList1.toString());
+
+  System.out.println("linked List 2 : "+linkedList2.toString());
+  zipLists(linkedList1,linkedList2);
+  System.out.println("Zip linked List : "+linkedList1.toString());
+  assertEquals("{1}->{20}->{2}->{30}->{3}->{40}->Null",linkedList1.toString());
+}
 
 }
