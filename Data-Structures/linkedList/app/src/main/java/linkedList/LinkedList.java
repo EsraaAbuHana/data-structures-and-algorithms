@@ -14,10 +14,18 @@ public class LinkedList {
     linkedList.append(6);
     linkedList.insertBefore(6, 9);
     linkedList.insertAfter(5, 2);
-
-    System.out.println(linkedList.toString());
-//linkedList.findK(2);
+    //linkedList.findK(2);
     System.out.println("Node of K :"+linkedList.findNodeK(1));
+    //add new LinkedList
+LinkedList linkedList2=new LinkedList();
+    linkedList2.insert(20);
+    linkedList2.append(30);
+    linkedList2.append(40);
+
+    System.out.println("linkedList2 : "+linkedList2.toString());
+    zipLists(linkedList,linkedList2);
+    System.out.println(linkedList.toString());
+
 
   }
 
@@ -179,6 +187,30 @@ return current.val;
 
 //      System.out.println(current);
  }
+  public static Node zipLists(LinkedList firstList, LinkedList secondList) {
+    Node current = firstList.head;
+    Node insert = secondList.head;
+    int counter  = 0;
 
+    if (current == null) {
+      return secondList.head;
+    }
+
+    while(current != null && insert != null) {
+      if (counter % 2 == 0) {
+        firstList.insertAfter(current.val, insert.val);
+        insert = insert.next;
+      }
+      current = current.next;
+      counter++;
+    }
+    if (current == null && insert != null) {
+      while (insert != null) {
+        firstList.append(insert.val);
+        insert = insert.next;
+      }
+    }
+    return firstList.head;
+  }
 }
 
