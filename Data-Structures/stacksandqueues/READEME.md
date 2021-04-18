@@ -49,3 +49,33 @@ Implement a Pseudo Queue class that acts just like a Queue but operates internal
 
 # WB
 ![](assest/CC10.jpg)
+#
+# Implement a Queue using two Stacks.
+
+# Challenge Summary
+<!-- Short summary or background information -->
+> **In this challenge I will implement a Queue using two Stacks.
+> by using only stack methods:`push(),pop(),isEmpty()`
+
+## Challenge Description
+<!-- Description of the challenge -->
+- Write an `enqueue(value)` which inserts value into the `PseudoQueue`:
+    -  using a first-in, first-out approach.
+- `dequeue()` which extracts a value from the `PseudoQueue`: using a first-in, first-out approach.
+- Know that the Stack instances have only: `push, pop, and peek` methods.
+- You should use your own Stack implementation.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- for `enqueue` method,Maintain the queues state in one primary stack.
+- pop the primary stack and push each value into the secondary stack when a new item needs to be added. 
+When the primary stack is empty, the enqueued value is added to it.
+- reversed the process.
+- `dequeue` method simply just has to pop the top value from the primary stack and return in.
+- **enqueue(value)** 
+   - Big O : O(n)
+- **dequeue()**
+   -  Big O : O(1)
+## Solution
+<!-- Embedded whiteboard image -->
+![](assest/CC11b.jpg)
+![](assest/CC11a.jpg)
