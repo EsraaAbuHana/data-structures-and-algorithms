@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="stacksandqueues.LibraryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-16T17:22:18" hostname="DESKTOP-ELOJ1AP" time="0.016">
+<testsuite name="stacksandqueues.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-18T18:30:12" hostname="DESKTOP-ELOJ1AP" time="0.014">
   <properties/>
-  <testcase name="testQueue" classname="stacksandqueues.LibraryTest" time="0.011"/>
-  <testcase name="testStack" classname="stacksandqueues.LibraryTest" time="0.004"/>
+  <testcase name="testQueue" classname="stacksandqueues.LibraryTest" time="0.014"/>
   <system-out><![CDATA[5
 Queue{front=Node{value=5, next=Node{value=7, next=Node{value=9, next=null}}}, rear=Node{value=9, next=null}}
-true
-java.lang.NullPointerException
-Stack{top=Node{value=6, next=Node{value=4, next=null}}}
-Stack{top=Node{value=4, next=null}}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
