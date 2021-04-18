@@ -1,6 +1,1 @@
-5
-nQueue{front=Node{value=5, next=Node{value=7, next=Node{value=9, next=null}}}, rear=Node{value=9, next=null}}
-true
- java.lang.NullPointerException
-9Stack{top=Node{value=6, next=Node{value=4, next=null}}}
-%Stack{top=Node{value=4, next=null}}
+YPseudoQueue{firstStack=Stack{top=Node{value=8, next=null}},secondStack=Stack{top=null}}

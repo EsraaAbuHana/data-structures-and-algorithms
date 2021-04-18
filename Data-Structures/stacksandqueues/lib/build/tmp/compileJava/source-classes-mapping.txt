@@ -4,5 +4,7 @@ stacksandqueues/Queue.java
  stacksandqueues.Queue
 stacksandqueues/Stack.java
  stacksandqueues.Stack
+stacksandqueues/PseudoQueue.java
+ stacksandqueues.PseudoQueue
 stacksandqueues/Library.java
  stacksandqueues.Library
