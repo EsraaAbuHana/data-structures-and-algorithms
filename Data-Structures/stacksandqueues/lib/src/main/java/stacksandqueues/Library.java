@@ -39,6 +39,16 @@ public class Library {
     System.out.println(queue.dequeue());
     System.out.println(queue.peek());
     System.out.println(queue);
+    //PseudoQueue
+    PseudoQueue pseudoQueue = new PseudoQueue();
+    pseudoQueue.enqueue(4);
+    pseudoQueue.enqueue(6);
+    pseudoQueue.enqueue(8);
+    System.out.println(pseudoQueue);
+    pseudoQueue.dequeue();
+    System.out.println(pseudoQueue);
+    pseudoQueue.dequeue();
+    System.out.println(pseudoQueue);
 
   }
 

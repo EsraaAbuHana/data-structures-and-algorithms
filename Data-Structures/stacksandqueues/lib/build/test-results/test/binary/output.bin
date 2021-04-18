@@ -1,2 +1,1 @@
-5
-nQueue{front=Node{value=5, next=Node{value=7, next=Node{value=9, next=null}}}, rear=Node{value=9, next=null}}
+YPseudoQueue{firstStack=Stack{top=Node{value=8, next=null}},secondStack=Stack{top=null}}

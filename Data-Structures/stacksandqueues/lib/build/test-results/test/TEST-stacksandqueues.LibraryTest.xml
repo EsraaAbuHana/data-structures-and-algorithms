@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="stacksandqueues.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-18T18:30:12" hostname="DESKTOP-ELOJ1AP" time="0.014">
+<testsuite name="stacksandqueues.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-18T19:50:38" hostname="DESKTOP-ELOJ1AP" time="0.014">
   <properties/>
-  <testcase name="testQueue" classname="stacksandqueues.LibraryTest" time="0.014"/>
-  <system-out><![CDATA[5
-Queue{front=Node{value=5, next=Node{value=7, next=Node{value=9, next=null}}}, rear=Node{value=9, next=null}}
+  <testcase name="testPseudoDequeue" classname="stacksandqueues.LibraryTest" time="0.014"/>
+  <system-out><![CDATA[PseudoQueue{firstStack=Stack{top=Node{value=8, next=null}},secondStack=Stack{top=null}}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

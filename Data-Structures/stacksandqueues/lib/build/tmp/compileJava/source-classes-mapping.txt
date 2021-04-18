@@ -1,8 +1,10 @@
 stacksandqueues/Node.java
  stacksandqueues.Node
-stacksandqueues/Library.java
- stacksandqueues.Library
-stacksandqueues/Stack.java
- stacksandqueues.Stack
 stacksandqueues/Queue.java
  stacksandqueues.Queue
+stacksandqueues/Stack.java
+ stacksandqueues.Stack
+stacksandqueues/PseudoQueue.java
+ stacksandqueues.PseudoQueue
+stacksandqueues/Library.java
+ stacksandqueues.Library

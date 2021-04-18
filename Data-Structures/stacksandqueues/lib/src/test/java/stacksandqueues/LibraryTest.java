@@ -53,5 +53,28 @@ public class LibraryTest {
 //    System.out.println(queueClassTest);
     assertTrue(true);
   }
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //lab 11 //PseudoQueue
+  @Test
+  public void testPseudoEnqueue(){
+    //PseudoQueue
+    PseudoQueue pseudoQueueClassTest = new PseudoQueue();
+    pseudoQueueClassTest.enqueue(4);
+    pseudoQueueClassTest.enqueue(6);
+    System.out.println(pseudoQueueClassTest);
+assertEquals("PseudoQueue{firstStack=Stack{top=Node{value=Node{value=Node{value=4, next=null}, next=null}, next=Node{value=6, next=null}}},secondStack=Stack{top=null}}",pseudoQueueClassTest.toString());
 
+  }
+  @Test
+  public void testPseudoDequeue(){
+    //PseudoQueue
+    PseudoQueue pseudoQueueClassTest = new PseudoQueue();
+    pseudoQueueClassTest.enqueue(4);
+    pseudoQueueClassTest.enqueue(6);
+    pseudoQueueClassTest.enqueue(8);
+    pseudoQueueClassTest.dequeue();
+    pseudoQueueClassTest.dequeue();
+    System.out.println(pseudoQueueClassTest);
+    assertEquals("PseudoQueue{firstStack=Stack{top=Node{value=8, next=null}},secondStack=Stack{top=null}}",pseudoQueueClassTest.toString());
+  }
 }
