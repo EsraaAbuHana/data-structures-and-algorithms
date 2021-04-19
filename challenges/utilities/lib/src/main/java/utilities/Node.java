@@ -11,7 +11,7 @@ package utilities;
     @Override
     public String toString() {
       return "Node{" +
-        "value=" + value +
+        "animal=" + value +
         ", next=" + next +
         '}';
     }
