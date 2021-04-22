@@ -10,5 +10,20 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+BinarySearchTree binarySearchTree=new BinarySearchTree();
+binarySearchTree.add(5);
+      binarySearchTree.add(1);
+      binarySearchTree.add(7);
+      binarySearchTree.add(10);
+      System.out.println(binarySearchTree.contains(7));
+      System.out.println(binarySearchTree.contains(8));
+      System.out.println(binarySearchTree.contains(5));
+      System.out.println(binarySearchTree.contains(-1));
+      System.out.println( "preOrder : "+binarySearchTree.preOrder(binarySearchTree.root));
+      System.out.println("inOrder : "+ binarySearchTree.inOrder(binarySearchTree.root));
+      System.out.println("postOrder : "+ binarySearchTree.postOrder(binarySearchTree.root));
+      System.out.println(binarySearchTree);
+
     }
 }
