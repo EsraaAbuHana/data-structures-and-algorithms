@@ -5,7 +5,7 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
-all 301 JavaScript code challenges are within the code challenges/301 [code-challenges](code-challenges)
+>all 301 JavaScript code challenges are within the code challenges/301 [code-challenges](code-challenges)
 
 
 # 401 Data Structures, Code Challenges

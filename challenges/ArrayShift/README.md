@@ -12,11 +12,3 @@ and a value to be added in the middle position.Our function will return an array
 - we set condition to check the length of array .
 ## Solution
 ![](assest/CC02.jpeg)
- - [x] Top-level README “Table of Contents” is updated
- - [x] Feature tasks for this challenge are completed
- - [x] Unit tests written and passing
-     - [x] “Happy Path” - Expected outcome
- - [x] README for this challenge is complete
-     - [x] Summary, Description, Approach & Efficiency, Solution
-     - [x] Link to code
-     - [x] Picture of whiteboard
