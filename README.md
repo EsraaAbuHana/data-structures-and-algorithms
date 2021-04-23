@@ -18,7 +18,7 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 |01.|[Challenge Documentation](challenges/array-reverse/README.md)|[Array Reverse](challenges/array-reverse/app/src/main/java/array/reverse/App.java)|
 |02.|[Challenge Documentation](challenges/ArrayShift/README.md)|[Array Shift](challenges/ArrayShift/lib/src/main/java/ArrayShift/ArrayShift.java)|
 |.03|[Challenge Documentation](challenges/BinarySearch/README.MD)|[Binary Search](challenges/BinarySearch/lib/src/)|
-|.04|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1edU2HNYEjbicQ7I0Kg5dnw14CUAJ28MpzI_7wpe2fMw/edit#gid=0)|[Fiboonacchi]([linkedList/app/src/main/java/linkedList/](https://docs.google.com/spreadsheets/d/1edU2HNYEjbicQ7I0Kg5dnw14CUAJ28MpzI_7wpe2fMw/edit#gid=0))|
+|.04|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1edU2HNYEjbicQ7I0Kg5dnw14CUAJ28MpzI_7wpe2fMw/edit#gid=0)|[Fibonacci](https://docs.google.com/spreadsheets/d/1edU2HNYEjbicQ7I0Kg5dnw14CUAJ28MpzI_7wpe2fMw/edit#gid=0)|
 |.05|[Challenge Documentation](Data-Structures/linkedList/README.md)|[ Linked List Implementation](Data-Structures/linkedList/app/src/)|
 |.06|[Challenge Documentation](Data-Structures/linkedList/README.md)|[Linked list insertions](Data-Structures/linkedList/app/src/)|
 |.07|[Challenge Documentation](Data-Structures/linkedList/README.md)|[k-th value from the end of a linked list](Data-Structures/linkedList/app/src/)|
