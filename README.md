@@ -5,15 +5,12 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
+all 301 JavaScript code challenges are within the code challenges/301 [code-challenges](code-challenges)
 
-Under the `data-structures-and-algorithms` repository, at the top level is a folder called `code-challenges`
 
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
+# 401 Data Structures, Code Challenges
 
-### 401 Data Structures, Code Challenges
-
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
-- 401 Java Table of Contents
+## 401 Java Table of Contents
 >***This table is organized by which day of class each challenge was assigned***
 >
 |No.|Root to Documentation|Root to Code Files|
