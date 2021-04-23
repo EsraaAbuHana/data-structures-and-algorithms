@@ -31,5 +31,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |.11|[Challenge Documentation](Data-Structures/stacksandqueues/README.md)|[Implement a Queue using two Stacks](Data-Structures/stacksandqueues/lib/src/)|
 |.12|[Challenge Documentation](Data-Structures/stacksandqueues/README.md)|[First-in, First out Animal Shelter.](Data-Structures/stacksandqueues/lib/src/)|
 |.13|[Challenge Documentation](challenges/utilities/README.md)|[Multi-bracket Validation.](challenges/utilities/lib/src/)|
-|.14|[Challenge Documentation]([Data-Structures/stacksandqueues/README.md](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0))|[Max stack]([Data-Structures/stacksandqueues/lib/src/](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0))|
+|.14|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0)|[Max stack](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0)|
 |.15|[Challenge Documentation](Data-Structures/tree/README.md)|[Binary Tree and BST Implementation](Data-Structures/tree/app/src/)|
