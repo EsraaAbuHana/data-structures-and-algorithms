@@ -7,8 +7,71 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
+  @Test public void testNode() {
+    BinarySearchTree classUnderTest = new BinarySearchTree();
+    assertNull("the tree is empty where the root =null",classUnderTest.root);
+    classUnderTest.add(5);
+    System.out.println(classUnderTest.root);
+    assertNotNull("the tree is not empty after add a new node",classUnderTest.root);
+
+  }
+
+  @Test public void testInOrder() {
+    BinarySearchTree classUnderTest = new BinarySearchTree();
+    classUnderTest.add(5);
+    assertEquals("[5]",classUnderTest.inOrder(classUnderTest.root).toString());
+    classUnderTest.add(1);
+    assertEquals("new node should added to the left","[1, 5]",classUnderTest.inOrder(classUnderTest.root).toString());
+    classUnderTest.add(7);
+    System.out.println("inOrder : "+ classUnderTest.inOrder(classUnderTest.root));
+    assertEquals("new node should added to the right","[1, 5, 7]",classUnderTest.inOrder(classUnderTest.root).toString());
+  }
+  @Test public void testPreOrder() {
+    BinarySearchTree classUnderTest = new BinarySearchTree();
+    classUnderTest.add(5);
+    assertEquals("[5]", classUnderTest.inOrder(classUnderTest.root).toString());
+    classUnderTest.add(1);
+    assertEquals( "[5, 1]", classUnderTest.preOrder(classUnderTest.root).toString());
+    classUnderTest.add(7);
+    assertEquals( "[5, 1, 7]", classUnderTest.preOrder(classUnderTest.root).toString());
+
+  }
+  @Test public void testPostOrder() {
+    BinarySearchTree classUnderTest = new BinarySearchTree();
+    classUnderTest.add(5);
+    assertEquals("[5]", classUnderTest.postOrder(classUnderTest.root).toString());
+    classUnderTest.add(1);
+    assertEquals( "[1, 5]", classUnderTest.postOrder(classUnderTest.root).toString());
+    classUnderTest.add(7);
+    assertEquals( "[1, 7, 5]", classUnderTest.postOrder(classUnderTest.root).toString());
+
+  }
+
+  @Test public void testAdd() {
+    BinarySearchTree classUnderTest = new BinarySearchTree();
+    classUnderTest.add(5);
+    classUnderTest.add(1);
+    classUnderTest.add(7);
+    assertEquals(5,classUnderTest.root.value);
+    assertEquals(1,classUnderTest.root.left.value);
+    assertEquals(7,classUnderTest.root.right.value);
+  }
+  @Test public void testContains() {
+
+      BinarySearchTree classUnderTest = new BinarySearchTree();
+      classUnderTest.add(5);
+    assertTrue("must return true",classUnderTest.contains(5));
+    assertFalse("must return false",classUnderTest.contains(4));
+    classUnderTest.add(4);
+    assertTrue("must return true after the new node is added",classUnderTest.contains(4));
+
+  }
+
+@Test public void testToString() {
+  BinarySearchTree classUnderTest = new BinarySearchTree();
+  classUnderTest.add(5);
+  classUnderTest.add(1);
+  classUnderTest.add(7);
+  assertEquals("BinarySearchTree{root=Node{value=5, left=Node{value=1, left=null, right=null}, right=Node{value=7, left=null, right=null}}, tree=[]}",classUnderTest.toString());
+}
 }
