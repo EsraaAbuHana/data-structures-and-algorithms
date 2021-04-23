@@ -24,14 +24,13 @@
 │           │       └── AppTest.java
 ```
 ## Challenge
-Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
-Create a BinaryTree class
-Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
-## Approach & Efficiency
-`The preOrder`, `inOrder`, and `postOrder`
--  methods all traverse the tree recursively,]
-- Big O time: Big O(log n)
--  Big O space: Big O(log n);
+* Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
+* Create a BinaryTree class
+*  To returns an array of the values, ordered appropriately ,define a method for each of the depth first traversals called:
+    *  preOrder
+    *  inOrder
+    *  postOrder 
+.
 ## API
 `preOrder`
 Takes in a root node, and returns the all nodes in the tree as an ArrayList ordered by root, left, right.
@@ -46,3 +45,16 @@ Takes in a root node, and returns the all nodes in the tree as an ArrayList orde
 
 `search`    
   Takes in a value and returns the node that contains that value, or null if no node contains that value.
+## Approach & Efficiency
+`The preOrder`, `inOrder`, and `postOrder`
+-  methods all traverse the tree recursively
+   - Big O: Big O( n)
+- `add` and `contains`
+  -  Big O: Big O(log n)
+  # Solution :
+  ![](/assest/CC15-preOrder.jpg)
+  ![](assest/CC15-InOrder.jpg)
+  ![](assest/CC15-poastOrder.jpg)
+  ![](assest/CC15-add.jpg)
+  ![](assest/CC15-contains.jpg)
+ 

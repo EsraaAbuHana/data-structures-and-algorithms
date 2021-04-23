@@ -43,11 +43,11 @@ public class BinaryTree<T> {
         return output;
       } else {
         if (root.left != null)
-          output.addAll(preOrder(root.left)) ;
+          output.addAll(inOrder(root.left)) ;
         output.add(root.value);
 
         if (root.right != null)
-          output.addAll(preOrder(root.right)) ;
+          output.addAll(inOrder(root.right)) ;
       }
 
     } catch (Exception ex) {
@@ -67,10 +67,10 @@ public ArrayList<Object> postOrder(Node root) {
       return output;
     } else {
       if (root.left != null)
-        output.addAll(preOrder(root.left)) ;
+        output.addAll(postOrder(root.left)) ;
 
       if (root.right != null)
-        output.addAll(preOrder(root.right)) ;
+        output.addAll(postOrder(root.right)) ;
       output.add(root.value);
     }
 
