@@ -5,15 +5,12 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
+>all 301 JavaScript code challenges are within the code challenges/301 [code-challenges](code-challenges)
 
-Under the `data-structures-and-algorithms` repository, at the top level is a folder called `code-challenges`
 
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
+# 401 Data Structures, Code Challenges
 
-### 401 Data Structures, Code Challenges
-
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
-- 401 Java Table of Contents
+## 401 Java Table of Contents
 >***This table is organized by which day of class each challenge was assigned***
 >
 |No.|Root to Documentation|Root to Code Files|
@@ -29,7 +26,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |.09|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1ykJACvY1xPAKTNaAslJsEG2Qr8iIo9tBa21jW6eW0lM/edit#gid=0)|[Reverse a Linked List](https://docs.google.com/spreadsheets/d/1ykJACvY1xPAKTNaAslJsEG2Qr8iIo9tBa21jW6eW0lM/edit#gid=0)|
 |.10|[Challenge Documentation](Data-Structures/stacksandqueues/README.md)|[Stack and a Queue Implementation](Data-Structures/stacksandqueues/lib/src/)|
 |.11|[Challenge Documentation](Data-Structures/stacksandqueues/README.md)|[Implement a Queue using two Stacks](Data-Structures/stacksandqueues/lib/src/)|
-|.12|[Challenge Documentation](Data-Structures/stacksandqueues/README.md)|[First-in, First out Animal Shelter.](Data-Structures/stacksandqueues/lib/src/)|
+|.12|[Challenge Documentation](challenges/utilities/README.md)|[First-in, First out Animal Shelter.](challenges/utilities/lib/src/)|
 |.13|[Challenge Documentation](challenges/utilities/README.md)|[Multi-bracket Validation.](challenges/utilities/lib/src/)|
 |.14|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0)|[Max stack](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0)|
 |.15|[Challenge Documentation](Data-Structures/tree/README.md)|[Binary Tree and BST Implementation](Data-Structures/tree/app/src/)|
