@@ -1,18 +1,8 @@
 package utilities;
 import java.lang.*;
-import java.util.*;
 
 import java.util.ArrayList;
-import java.util.List;
 
-//  {}	TRUE
-//  {}(){}	TRUE
-//    ()[[Extra Characters]]	TRUE
-//    (){}[[]]	TRUE
-//  {}{Code}[Fellows](())	TRUE
-//[({}]	FALSE
-//    (](	FALSE
-//  {(})	FALSE
 public class MultiBracketValidation {
 
 
@@ -25,15 +15,11 @@ static boolean multiBracketValidation(String str)
       chars.add(str.charAt(i));}
   }
   System.out.println(chars);
-  if (chars.size()==1)return false;
+  if (chars.size()==0 ||chars.size()%2!=0||chars.size()==1){return false;}
   for (int i = 0; i < chars.size()-1; i++)
   {
     char nextToC = chars.get(i+1);
     char c = chars.get(i);
-
-//    System.out.println(c);
-    if (c == '{' || c == '(' || c == '[')
-    {
       if(nextToC=='}'){
         if (c == '(' || c == '['){
           return false;
@@ -51,15 +37,20 @@ static boolean multiBracketValidation(String str)
       }
     }
 
-  }
   return true;
 }
 
   public static void main(String[] args)
   {
+    System.out.println("should be FALSE >>null: "+multiBracketValidation(""));
+    System.out.println("should be TRUE : "+multiBracketValidation("{}"));
+    System.out.println("should be TRUE : "+multiBracketValidation("{}(){}"));
+    System.out.println("should be TRUE : "+multiBracketValidation("()[[Extra Characters]]"));
+    System.out.println("should be TRUE : "+multiBracketValidation("(){}[[]]"));
+    System.out.println("should be TRUE : "+multiBracketValidation("{}{Code}[Fellows](())"));
+    System.out.println("should be FALSE : "+multiBracketValidation("[({}]"));
+    System.out.println("should be FALSE : "+multiBracketValidation("(]("));
+    System.out.println("should be FALSE : "+multiBracketValidation("{(})"));
 
-//    String str = "{dxs}ljkh])";
-    String str = "[()}]";
-      System.out.println(multiBracketValidation(str));
   }
 }
