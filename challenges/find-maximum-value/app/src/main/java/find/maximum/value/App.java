@@ -14,16 +14,8 @@ public static Object findMaximumValue(BinaryTree output) {
     return (output.inOrder(output.root).get((output.inOrder(output.root)).size()-1));
 }
     public static void main(String[] args) {
-      BinaryTree output=new BinaryTree();
-      output.add(1);
-      output.add(9);
-      output.add(3);
-      output.add(5);
-      output.add(2);
-      output.add(7);
-      output.add(11);
-      output.add(4);
-      System.out.println(findMaximumValue(output));
-      System.out.println((output.inOrder(output.root).get((output.inOrder(output.root)).size()-1)));
+
+
+
     }
 }

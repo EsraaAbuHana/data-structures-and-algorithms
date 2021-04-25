@@ -9,6 +9,22 @@ import static org.junit.Assert.*;
 public class AppTest {
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+      BinaryTree output=new BinaryTree();
+      output.add(1);
+      output.add(9);
+      output.add(3);
+      output.add(5);
+      output.add(2);
+      output.add(7);
+      output.add(11);
+      output.add(4);
+      output.add(-3);
+      output.add(-10);
+      output.add(0);
+      output.add(-1);
+      System.out.println(classUnderTest.findMaximumValue(output));
+      System.out.println((output.inOrder(output.root).get((output.inOrder(output.root)).size()-1)));
+
+
     }
 }
