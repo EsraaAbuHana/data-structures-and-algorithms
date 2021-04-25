@@ -4,24 +4,26 @@
 package find.maximum.value;
 
 public class App extends BinaryTree{
-    public String getGreeting() {
-        return "Hello World!";
+
+public static Object findMaximumValue(BinaryTree output) {
+    try {
+      if (output.root==null)return 0;
+    }catch (Exception ex){
+      System.out.println(ex);
     }
-
-public Integer findMaximumValue(Node<Integer> root) {
-Integer max=0;
-  if (root.value == null) {
-    return 0;
-  }
-  if (root.left == null && root.right == null) {
-    return root.value;
-
-
-  }
-  return max;
+    return (output.inOrder(output.root).get((output.inOrder(output.root)).size()-1));
 }
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-        
+      BinaryTree output=new BinaryTree();
+      output.add(1);
+      output.add(9);
+      output.add(3);
+      output.add(5);
+      output.add(2);
+      output.add(7);
+      output.add(11);
+      output.add(4);
+      System.out.println(findMaximumValue(output));
+      System.out.println((output.inOrder(output.root).get((output.inOrder(output.root)).size()-1)));
     }
 }

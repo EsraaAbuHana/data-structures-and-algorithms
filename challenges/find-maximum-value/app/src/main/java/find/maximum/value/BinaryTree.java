@@ -80,5 +80,39 @@ public class BinaryTree<T> {
 
     return output;
   }
+  public void add(Object value) {
+    Node addedNode = new Node(value);
+    Node current = this.root;
+    try {
+      if (this.root == null) {
+        this.root = addedNode;
+      } else {
+        while (current != null) {
+          if ((int) current.value > (int) value) {
+            if (current.left == null) {
+              current.left = addedNode;
+              break;
+            }
+            current = current.left;
+          } else {
+            if (current.right == null) {
+              current.right = addedNode;
+              break;
+            }
+            current = current.right;
+          }
+        }
+      }
+    } catch (Exception ex) {
+      System.out.println(ex);
+    }
+  }
 
+  @Override
+  public String toString() {
+    return "BinaryTree{" +
+      "root=" + root +
+      ", tree=" + tree +
+      '}';
+  }
 }
