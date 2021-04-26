@@ -7,9 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
+  private App classUnderTest;
+
+  @Test public void testEmptyBinaryTree() {
         App classUnderTest = new App();
       BinaryTree output=new BinaryTree();
+      System.out.println(classUnderTest.findMaximumValue(output));
+assertEquals("should return zero when the the Binary Tree is empty :" ,0,classUnderTest.findMaximumValue(output));
+    }
+  @Test public void testNonEmptyBinaryTree() {
+    App classUnderTest = new App();
+    BinaryTree output=new BinaryTree();
       output.add(1);
       output.add(9);
       output.add(3);
@@ -22,9 +30,21 @@ public class AppTest {
       output.add(-10);
       output.add(0);
       output.add(-1);
-      System.out.println(classUnderTest.findMaximumValue(output));
-      System.out.println((output.inOrder(output.root).get((output.inOrder(output.root)).size()-1)));
+    System.out.println(classUnderTest.findMaximumValue(output));
+    assertEquals("should return 11 when the the Binary Tree is not empty :" ,11,classUnderTest.findMaximumValue(output));
+  }
+  @Test public void testAfterUpdateBinaryTree() {
+    App classUnderTest = new App();
+    BinaryTree output=new BinaryTree();
+    output.add(1);
+    output.add(9);
+    output.add(3);
+    System.out.println(classUnderTest.findMaximumValue(output));
+    assertEquals("the old max is  :" ,9,classUnderTest.findMaximumValue(output));
+    output.add(20);
+    output.add(4);
+    assertEquals("the new max is  :" ,20,classUnderTest.findMaximumValue(output));
 
+  }
 
-    }
 }
