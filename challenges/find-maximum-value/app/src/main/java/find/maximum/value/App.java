@@ -26,7 +26,8 @@ public static Object findMaximumValue(BinaryTree output) {
       output.add(11);
       output.add(9);
       output.add(4);
-//      System.out.println(output);
+      System.out.println(output);
 BreadthFirstTraversal.breadthFirstTraversal(output);
+      System.out.println(BreadthFirstTraversal.breadthFirstTraversal(output));
     }
 }
