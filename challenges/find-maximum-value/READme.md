@@ -16,3 +16,28 @@
 
 ## Solution
 ![](assest/CC16.jpg)
+#
+
+# Code Challenge: Class 17
+##  Breadth-first Traversal
+## Challenge Summary
+
+## Challenge
+* Write an instance method `breadthFirstTraversal`.
+* Don't utilize any of the built-in methods.
+*  INPUT: Binary Tree
+*  OUTPUT:  A list of the values in the tree in the order they were encountered.
+  
+## Approach and Efficiency
+- **The approach taken for this challenge**
+  - create an empty queue q and an array list 
+  - then loop over while the front is not empty
+  - add the front value to the array list 
+  - enqueue the left then right children to q
+  - dequeue a node from q.
+
+- **This method takes:**
+  - time :O(n^2) 
+
+## Solution
+![](assest/CC17.jpg)

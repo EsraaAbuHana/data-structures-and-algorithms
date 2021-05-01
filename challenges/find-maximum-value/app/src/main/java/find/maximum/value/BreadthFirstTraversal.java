@@ -8,19 +8,19 @@ public class BreadthFirstTraversal extends BinaryTree {
 
   }
 
-  //  public BreadthFirstTraversal() {
-//
-//  }
-//  public static ArrayList<Object> output(){
-//    ArrayList<Object> array=new ArrayList<Object>();
-//  return array;
-//  }
+  public BreadthFirstTraversal() {
+
+  }
+
 //  [2, | 7,5 | ,2,6,9 | ,5,11,4]
   public static ArrayList breadthFirstTraversal(BinaryTree input) {
       ArrayList output = new ArrayList();
     Queue q = new Queue();
     q.enqueue(input.root);
     try{
+      if(input.root==null){
+        return null;
+      }
       while (q.front != null){
 
         output.add(((Node) q.front.value).value);
@@ -35,7 +35,8 @@ public class BreadthFirstTraversal extends BinaryTree {
     }catch (Exception ex){
       System.out.println(ex);
     }
-
+    return output;
+  }
 
 //    ArrayList<Object> levelArray = new ArrayList<Object>();
 //    ArrayList<Object> outputArray = new ArrayList<Object>();
@@ -69,7 +70,6 @@ public class BreadthFirstTraversal extends BinaryTree {
 //    }catch (Exception ex){
 //      System.out.println(ex);
 //    }
-    return output;
-  }
+
 }
 

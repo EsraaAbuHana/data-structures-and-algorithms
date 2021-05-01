@@ -31,3 +31,4 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 |14.|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0)|[Max stack](https://docs.google.com/spreadsheets/d/1GmRamdvuWMmpxWerc6qhNV6XgtPm-EYwFiEWaoKuC3Y/edit#gid=0)|
 |15.|[Challenge Documentation](Data-Structures/tree/README.md)|[Binary Tree and BST Implementation](Data-Structures/tree/app/src/)|
 |16.|[Challenge Documentation](challenges/find-maximum-value/READme.md)|[Find the Maximum Value in a Binary Tree](challenges/find-maximum-value/app/src/main/)|
+|17.|[Challenge Documentation](challenges/find-maximum-value/READme.md|[Find the Maximum Value in a Binary Tree](challenges/find-maximum-value/app/src/main/)|
