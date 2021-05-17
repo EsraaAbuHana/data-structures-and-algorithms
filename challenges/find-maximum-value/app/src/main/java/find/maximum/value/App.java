@@ -16,7 +16,7 @@ public static Object findMaximumValue(BinaryTree output) {
 
     public static void main(String[] args) {
 
-    
+
 
     }
 }
