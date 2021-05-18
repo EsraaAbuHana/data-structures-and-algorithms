@@ -3,12 +3,69 @@
  */
 package MergeSort;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.util.Arrays;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+public class App {
+  public String getGreeting() {
+    return "Hello World!";
+  }
+
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+  }
+
+  public static int[] mergeSort(int[] arr) {
+    //  DECLARE n <-- arr.length
+    int n = arr.length;
+//    if n > 1
+//  DECLARE mid <-- n/2
+//  DECLARE left <-- arr[0...mid]
+//  DECLARE right <-- arr[mid...n]
+    if (n > 1) {
+      int mid = n / 2;
+      int[] left = Arrays.copyOfRange(arr, 0, mid);
+      int[] right = Arrays.copyOfRange(arr, mid, arr.length);
+//  for(int i=0;i<mid;i++){
+//    left
+//  }
+//  Mergesort(left)
+//  // sort the right side
+//  Mergesort(right)
+//  // merge the sorted left and right sides together
+//  Merge(left, right, arr)
+      mergeSort(left);
+      mergeSort(right);
+      return merge(left, right, arr);
+    } else {
+      return arr;
     }
+  }
+
+  public static int[] merge(int[] left, int[] right, int[] arr) {
+    //  ALGORITHM Merge(left, right, arr)
+//  DECLARE i <-- 0
+//  DECLARE j <-- 0
+//  DECLARE k <-- 0
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    //    while i < left.length && j < right.length
+    while (i < left.length && j < right.length) {
+      if (left[i] <= right[j]) {
+        arr[k] = left[i];
+        i = i + 1;
+      } else {
+        arr[k] = right[j];
+        j = j + 1;
+      }
+//  k <-- k + 1
+//    if i = left.length
+//  set remaining entries in arr to remaining values in right
+//    else
+//  set remaining entries in arr to remaining values in left
+//
+    }
+    return arr;
+  }
+
 }
