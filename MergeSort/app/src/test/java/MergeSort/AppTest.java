@@ -7,8 +7,22 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
+    @Test public void testMerge() {
         App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+      int[] arr = {8, 4, 23, 42, 16, 15};
+//      classUnderTest.mergeSort(arr);
+      assertArrayEquals(arr, classUnderTest.mergeSort(arr));
     }
+  @Test public void testMergeSize() {
+    App classUnderTest = new App();
+    int[] arr = {8, 4, 23, 42, 16, 15};
+//      classUnderTest.mergeSort(arr);
+    assertEquals(arr.length, classUnderTest.mergeSort(arr).length);
+  }
+  @Test public void testMergeLengthOf0() {
+    App classUnderTest = new App();
+    int[] arr = {8};
+//      classUnderTest.mergeSort(arr);
+    assertArrayEquals(arr, classUnderTest.mergeSort(arr));
+  }
 }
