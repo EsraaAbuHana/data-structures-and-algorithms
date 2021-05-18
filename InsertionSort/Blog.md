@@ -20,10 +20,26 @@
 
 - Sample Arrays : [8,4,23,42,16,15]
 #### Pass 1:
+- We  use for loop that begins at the 2nd value in the array which was -`4`-, and compare it with value before it wich was -`8`-,once its  greater than the current one being its moved left.
+![](assest/1.jpg)
+#### Pass 2 & 3:
+- for the second and the third steps were the same .
+- increase `i` of the outer loop 
+- started comparing by the value at the index of `i` and set it as the temporary value
+- check the condition of the while loop keep once its false loop over only the outer loop .
+![](assest/2&3.jpg)
+#### Pass 4:
+- for the forth and the fifth steps were the same .
+- increase `i` of the outer loop 
+- started comparing by the value at the index of `i` and set it as the temporary value
+- init in the while loop when the condition was true , keep check if the temporary value is less than the value before moved it left.
+- once the condition is false set the temporary value at that index.
+![](assest/4.jpg)
+#### Pass 5:
+![](assest/5.jpg)
 
 
-
-## Efficency :
+## Efficiency :
 
 - Time: O(n^2)
 The basic operation of this algorithm is comparison. This will happen n * (n-1) number of times…concluding the algorithm to be n squared.
