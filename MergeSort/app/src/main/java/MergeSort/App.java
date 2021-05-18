@@ -12,36 +12,29 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
+    int[] arr = {8, 4, 23, 42, 16, 15};
+    mergeSort(arr);
+    for (int i = 0; i < arr.length; i++) {
+      System.out.println("i : " + arr[i]);
+    }
   }
 
   public static int[] mergeSort(int[] arr) {
-    //  DECLARE n <-- arr.length
     int n = arr.length;
-//    if n > 1
-//  DECLARE mid <-- n/2
-//  DECLARE left <-- arr[0...mid]
-//  DECLARE right <-- arr[mid...n]
+
     if (n > 1) {
       int mid = n / 2;
       int[] left = Arrays.copyOfRange(arr, 0, mid);
       int[] right = Arrays.copyOfRange(arr, mid, arr.length);
-//  for(int i=0;i<mid;i++){
-//    left
-//  }
-//  Mergesort(left)
-//  // sort the right side
-//  Mergesort(right)
-//  // merge the sorted left and right sides together
-//  Merge(left, right, arr)
       mergeSort(left);
       mergeSort(right);
-      return merge(left, right, arr);
-    } else {
-      return arr;
+      merge(left, right, arr);
     }
+    return arr;
+
   }
 
-  public static int[] merge(int[] left, int[] right, int[] arr) {
+  public static void merge(int[] left, int[] right, int[] arr) {
     //  ALGORITHM Merge(left, right, arr)
 //  DECLARE i <-- 0
 //  DECLARE j <-- 0
@@ -59,13 +52,27 @@ public class App {
         j = j + 1;
       }
 //  k <-- k + 1
+      k = k + 1;
+    }
 //    if i = left.length
-//  set remaining entries in arr to remaining values in right
+    //  set remaining entries in arr to remaining values in right
 //    else
 //  set remaining entries in arr to remaining values in left
 //
+    if (i == left.length) {
+      for (int rem = j; rem < right.length; rem++) {
+        arr[k] = right[rem];
+        k++;
+      }
+    } else {
+      for (int rem = j; rem < left.length; rem++) {
+        arr[k] = left[rem];
+        k++;
+      }
     }
-    return arr;
-  }
 
+  }
+//      return arr;
 }
+
+
