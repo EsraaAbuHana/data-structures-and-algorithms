@@ -4,7 +4,7 @@ Conceptually, a merge sort works as follows: Divide the unsorted list into n sub
 ```
 ALGORITHM Mergesort(arr)
     DECLARE n <-- arr.length
-           
+
     if n > 1
       DECLARE mid <-- n/2
       DECLARE left <-- arr[0...mid]
@@ -28,7 +28,7 @@ ALGORITHM Merge(left, right, arr)
         else
             arr[k] <-- right[j]
             j <-- j + 1
-            
+
         k <-- k + 1
 
     if i = left.length
@@ -45,5 +45,5 @@ ALGORITHM Merge(left, right, arr)
 
 
 ## Efficency
-- Time: O(n^2)
+- Time: O(nLog(n))
 - Space: O(1)
