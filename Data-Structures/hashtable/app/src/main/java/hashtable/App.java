@@ -12,11 +12,16 @@ Hashtable hashtable=new Hashtable();
       hashtable.add("groot", "esraa");
 
       System.out.println(new Hashtable().hash("groot"));
-      System.out.println(hashtable);
-      System.out.println(hashtable.get("groot"));
-      System.out.println(hashtable.get("esraa"));
-      System.out.println(hashtable.contains("groot"));
-      System.out.println(hashtable.contains("esraa"));
+//      System.out.println(hashtable);
+      System.out.println(hashtable.get("g"));
+      System.out.println(hashtable.get("r"));
+      System.out.println(hashtable.get("o"));
+      System.out.println(hashtable.get("o"));
+      System.out.println(hashtable.get("t"));
+
+//      System.out.println(hashtable.get("esraa"));
+//      System.out.println(hashtable.contains("groot"));
+//      System.out.println(hashtable.contains("esraa"));
 
     }
 }
