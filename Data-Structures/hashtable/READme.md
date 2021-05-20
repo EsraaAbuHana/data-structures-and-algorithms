@@ -14,7 +14,7 @@
 
 - for all methods the Time Complexity : O(n) 
 - for `contains` ,`git` , `hash` methods the Space Complexity : O(1) 
-- for `add` method the Time Complexity : O(1) 
+- for `add` method the Space Complexity : O(1) 
 ## API
 - `add`
 Takes in a key and a value, hashes the key and adds the pair to the index for that hash. 
