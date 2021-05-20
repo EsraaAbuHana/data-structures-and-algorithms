@@ -33,7 +33,7 @@ public class Hashtable<T> {
     for (int i = 0; i < convertedString.length(); i++) {
 
       int index = hashFunc(convertedString.charAt(i));
-      hasHCharsSum = +index;
+      hasHCharsSum += index;
     }
     return hasHCharsSum * 599 % 1024;
 
@@ -60,6 +60,7 @@ public class Hashtable<T> {
         if (((NodeHT) current.val).getKey() == key) {
           return (T) ((NodeHT) current.val).getValue();
         }
+        current=current.next;
       }
     }
     return null;
@@ -70,12 +71,15 @@ public class Hashtable<T> {
     if (hashNodesList[index] != null) {
       LinkedList linkedList = (LinkedList) hashNodesList[index];
       Node current = linkedList.head;
+
       while (current != null) {
         if (((NodeHT) current.val).getKey() == key) {
           return true;
         }
+        current=current.next;
       }
     }
+
     return false;
   }
 
