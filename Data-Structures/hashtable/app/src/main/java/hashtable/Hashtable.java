@@ -62,21 +62,21 @@ public class Hashtable<T> {
         }
       }
     }
-    return (T) "this key is not found";
+    return null;
   }
 
-  public int contains(T key) {
+  public boolean contains(T key) {
     int index = hash(key);
     if (hashNodesList[index] != null) {
       LinkedList linkedList = (LinkedList) hashNodesList[index];
       Node current = linkedList.head;
       while (current != null) {
         if (((NodeHT) current.val).getKey() == key) {
-          return index;
+          return true;
         }
       }
     }
-    return -1;
+    return false;
   }
 
   @Override

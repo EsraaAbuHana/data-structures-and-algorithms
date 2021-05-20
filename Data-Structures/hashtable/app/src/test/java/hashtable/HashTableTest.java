@@ -24,14 +24,17 @@ public class HashTableTest {
     Hashtable claasUnderTest= new Hashtable();
     claasUnderTest.add("groot","esraa");
     assertEquals("esraa", claasUnderTest.get("groot"));
-    assertEquals("this key is not found", claasUnderTest.get("nebula"));
+    assertEquals(null, claasUnderTest.get("nebula"));
+    claasUnderTest.add("grtoo","fox");
+    assertEquals("fox", claasUnderTest.get("grtoo"));
+
 
   }
   @Test public void testContains(){
     Hashtable claasUnderTest= new Hashtable();
     claasUnderTest.add("groot","esraa");
-    assertEquals(876, claasUnderTest.contains("groot"));
-    assertEquals(-1, claasUnderTest.contains("esraa"));
+    assertTrue( claasUnderTest.contains("groot"));
+    assertFalse( claasUnderTest.contains("esraa"));
 
 
   }
