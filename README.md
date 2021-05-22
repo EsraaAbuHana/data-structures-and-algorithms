@@ -32,3 +32,6 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 |15.|[Challenge Documentation](Data-Structures/tree/README.md)|[Binary Tree and BST Implementation](Data-Structures/tree/app/src/)|
 |16.|[Challenge Documentation](challenges/find-maximum-value/READme.md)|[Find the Maximum Value in a Binary Tree](challenges/find-maximum-value/app/src/main/)|
 |17.|[Challenge Documentation](challenges/find-maximum-value/READme.md)|[Find the Maximum Value in a Binary Tree](challenges/find-maximum-value/app/src/main/)|
+|26.|[Challenge BLOG](challenges/InsertionSort/Blog.md)|[Insertion Sort](challenges/InsertionSort/lib/src/main/)|
+|27.|[Challenge BLOG](challenges/MergeSort/Blog.md)|[Merge Sort](challenges/MergeSort/app/src/main/)|
+|29.|[Challenge BLOG](challenges/QuickSort/Blog.md)|[Quick Sort](challenges/QuickSort/app/src/main/)|

@@ -63,6 +63,10 @@ ALGORITHM Swap(arr, i, low)
 ## Efficiency :
 
 - Time: O(n^2)
+  - **worst case time complexity** 
+  - Each partition step is invoked recursively from the previous one. Given that, we can take the complexity of each partition call and sum them up to get our total complexity of the Quicksort algorithm.
 
+  - Therefore, the time complexity of the Quicksort algorithm in worst case is {[N + (N - 1) + (N - 2) + (N -3) + ..... + 2] = [{N(N + 1)}/{2} - 1] ={O}(N^2)}
+  - As a result,{T(N) = N + (N-1) + (N-2) ... + 3 + 2 =  [{N(N + 1)}/{2} - 1] ={O}(N^2)}}
 - Space: O(1)
-No additional space is being created. This array is being sorted in place…keeping the space at constant O(1).
+  - No additional space is being created. This array is being sorted in place…keeping the space at constant O(1).
