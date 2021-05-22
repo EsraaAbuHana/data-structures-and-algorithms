@@ -33,6 +33,6 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 |16.|[Challenge Documentation](challenges/find-maximum-value/READme.md)|[Find the Maximum Value in a Binary Tree](challenges/find-maximum-value/app/src/main/)|
 |17.|[Challenge Documentation](challenges/find-maximum-value/READme.md)|[Find the Maximum Value in a Binary Tree](challenges/find-maximum-value/app/src/main/)|
 |26.|[Challenge BLOG](challenges/InsertionSort/Blog.md)|[Insertion Sort](challenges/InsertionSort/lib/src/main/)|
-|27.|[Challenge BLOG](challenges/MergeSort/Blog.md)|[Merge Sort](challenges/MergeSort/app/src/main/)|
-|28.|[Challenge BLOG](challenges/QuickSort/Blog.md)|[Quick Sort](challenges/QuickSort/app/src/main/)|
-|30.|[Challenge Documentation](Data-Structures/hashtable/README.md)|[Hash Table](Data-Structures/hashtable/app/src/)|
+|27.|[Challenge BLOG](challenges/MergeSort/BLOG.md)|[Merge Sort](challenges/MergeSort/app/src/main/)|
+|28.|[Challenge BLOG](challenges/QuickSort/BLOG.md)|[Quick Sort](challenges/QuickSort/app/src/main/)|
+|30.|[Challenge Documentation](Data-Structures/hashtable/READme.md)|[Hash Table](Data-Structures/hashtable/app/src/)|
