@@ -39,8 +39,26 @@ ALGORITHM Swap(arr, i, low)
 
 - Sample Arrays : [8,4,23,42,16,15]
 #### Pass 1:
+- What we do here that we take the last element in the array as a pivot .
+-  Then we declare a variable `low` which weill count the elements smaller than the pivot,so we will loop over the main array comparing the elements with the pivot , increase `low` whenever their is an element smaller than it.
+- Once we finished ,we will set our pivot on its right position of `low+1` .
+- **We do over the previous steps in Pass 1 for subs array at the left an the right of pivot**
+![](assest/1.jpg)
 
-
+#### Pass 2:
+- Here we take the array of the left side of the position of the passed pivot, and sort it.
+- as we do in `Pass 1`  , set a new pivot which it was 4 .
+- there are no elements smaller than the pivot so swap it to put it at the first index.
+![](assest/2.jpg)
+#### Pass 3:
+- Now sort the right side of the pivot of `Pass 1` .
+- your new pivot is 23.
+- do as we did in `Pass 1`, so by the end you will swap the elements at the `3 ,4` indexes.
+![](assest/3.jpg)
+#### Pass 4:
+- at the last stage your pivot is `23`.
+- do what we do before ,by the end swap the elements at the `5 ,4` indexes.
+![](assest/4.jpg)
 #
 ## Efficiency :
 
