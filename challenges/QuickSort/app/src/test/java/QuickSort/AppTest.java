@@ -14,19 +14,11 @@ public class AppTest {
 assertEquals(sortedArray.length,classUnderTest.QuickSort(array,0,array.length-1).length);
       assertArrayEquals(sortedArray,classUnderTest.QuickSort(array,0,array.length-1));
     }
-  @Test public void testAppQuickSortSubArray() {
+  @Test public void testAppQuickSorEmptyArray() {
     App classUnderTest = new App();
-    int[] arr={8,4,23,42,16,15};
-    int[] sortedArray = {4, 8, 23, 42,16, 15};
-
-    assertArrayEquals(sortedArray,classUnderTest.QuickSort(arr,0,arr.length-3));
-  }
-  @Test public void testAppQuickSortMidArray() {
-    App classUnderTest = new App();
-    int[] arr={8,4,23,42,16,15};
-    int[] sortedArray = {8,4,16,23,42,15};
-
-    assertArrayEquals(sortedArray,classUnderTest.QuickSort(arr,2,arr.length-2));
+    int[] array={};
+    assertEquals(array.length,classUnderTest.QuickSort(array,0,array.length-1).length);
+    assertArrayEquals( array,classUnderTest.QuickSort(array,0,array.length-1));
   }
   @Test public void testAppArrayOfOne() {
     App classUnderTest = new App();
@@ -35,4 +27,30 @@ assertEquals(sortedArray.length,classUnderTest.QuickSort(array,0,array.length-1)
 
     assertArrayEquals(sortedArray,classUnderTest.QuickSort(arr,2,arr.length-2));
   }
+//  Reverse-sorted: [20,18,12,8,5,-2]
+
+@Test public void testAppQuickSortReverseSortedArray() {
+  App classUnderTest = new App();
+  int[] array={20,18,12,8,5,-2};
+  int[] sortedArray = {-2,5,8,12,18,20};
+  assertEquals(sortedArray.length,classUnderTest.QuickSort(array,0,array.length-1).length);
+  assertArrayEquals(sortedArray,classUnderTest.QuickSort(array,0,array.length-1));
+}
+  @Test public void testAppQuickSortFewUniquesArray() {
+    //  Few uniques: [5,12,7,5,5,7]
+    App classUnderTest = new App();
+    int[] array={5,12,7,5,5,7};
+    int[] sortedArray = {5,5,5,7,7,12};
+    assertEquals(sortedArray.length,classUnderTest.QuickSort(array,0,array.length-1).length);
+    assertArrayEquals(sortedArray,classUnderTest.QuickSort(array,0,array.length-1));
+  }
+  @Test public void testAppQuickSortNearlySortedArray() {
+//  Nearly-sorted: [2,3,5,7,13,11]
+    App classUnderTest = new App();
+    int[] array={2,3,5,7,13,11};
+    int[] sortedArray = {2,3,5,7,11,13};
+    assertEquals(sortedArray.length,classUnderTest.QuickSort(array,0,array.length-1).length);
+    assertArrayEquals(sortedArray,classUnderTest.QuickSort(array,0,array.length-1));
+  }
+
 }
