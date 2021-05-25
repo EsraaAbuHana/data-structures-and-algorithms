@@ -38,6 +38,6 @@ Takes in an arbitrary key and returns an index in the collection.
 - from the declared methods above use the contain method which check if the word is not exist as a key add it to the hashTable as a key  ,else return it .
 - This solution takes O(n) time and space.
   - For time complexity ,we loop over the array of string till reach the first repeated word.
-  - For space we were add each new word to our hashTable.
+  - For space we added each new word to our hashTable.
 ## Solution 
 ![](assest/31.jpg)
