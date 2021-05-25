@@ -10,6 +10,7 @@ Hashtable hashtable=new Hashtable();
       System.out.println(hashtable.get("groot"));
 
       hashtable.add("groot", "esraa");
+      System.out.println(hashtable.hash("groot"));
 
       System.out.println(new Hashtable().hash("groot"));
 //      System.out.println(hashtable);
@@ -22,6 +23,5 @@ Hashtable hashtable=new Hashtable();
 //      System.out.println(hashtable.get("esraa"));
 //      System.out.println(hashtable.contains("groot"));
 //      System.out.println(hashtable.contains("esraa"));
-
     }
 }
