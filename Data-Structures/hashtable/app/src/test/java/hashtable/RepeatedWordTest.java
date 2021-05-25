@@ -15,4 +15,11 @@ public class RepeatedWordTest {
     System.out.println("the  most repeated one is : "+classUnderTest1.repeatedWord(string));
     assertTrue(true);
   }
+  @Test
+  public void testEmptyOneWord() {
+    RepeatedWord classUnderTest1 = new RepeatedWord();
+String string=" ";
+    String string1=" hello";
+    assertEquals(string,classUnderTest1.repeatedWord(string));
+    assertEquals(string1,classUnderTest1.repeatedWord(string1));  }
 }

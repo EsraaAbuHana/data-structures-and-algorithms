@@ -36,3 +36,4 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 |27.|[Challenge BLOG](challenges/MergeSort/BLOG.md)|[Merge Sort](challenges/MergeSort/app/src/main/)|
 |28.|[Challenge BLOG](challenges/QuickSort/BLOG.md)|[Quick Sort](challenges/QuickSort/app/src/main/)|
 |30.|[Challenge Documentation](Data-Structures/hashtable/READme.md)|[Hash Table](Data-Structures/hashtable/app/src/)|
+|31.|[Challenge Documentation](Data-Structures/hashtable/READme.md#code-challenge:-class-31)|[Repeated Word](Data-Structures/hashtable/app/src/)|
