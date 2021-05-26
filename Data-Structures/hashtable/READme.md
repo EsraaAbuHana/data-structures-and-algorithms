@@ -41,3 +41,21 @@ Takes in an arbitrary key and returns an index in the collection.
   - For space we added each new word to our hashTable.
 ## Solution 
 ![](assest/31.jpg)
+#
+# Code Challenge: Class 32
+#
+# Code Challenge: Class 33
+# Left Join
+## Challenge
+- Write a function that LEFT JOINs two hashmaps into a single data structure.
+- Avoid utilizing any of the library methods available to your language.
+
+## Approach and Efficiency
+-  create a hashTables with a size equal to that of the number of keys stored in the left hashTable.
+- The new hashTable will hold a key of that left one keys', and its value in the two tables. 
+- If the second hashTable also contains that key, its value is added to the hashTable as well, otherwise it is set to NULL. 
+- This method takes
+  -  O(n) time a where n represents the total key/value pairings in the first hashTable.
+  -  O(n)  space where n represents the total key/value pairings in the first hashTable.
+## Solution
+![](assest/CC33.jpg)
