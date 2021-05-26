@@ -28,7 +28,7 @@
    - Takes in a given node
    - Include the weight of the connection in the returned collection
 - `Size()`:
-  - This method, returns the total number of nodes in the graph
+  - This method,returns the total number of nodes in the graph
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  Each method within the graph class takes `O(1) time and space` as they utilize the methods on Lists.
