@@ -34,8 +34,7 @@ public class Graph {
     List<Vertex> nodes = new ArrayList<>();
 
     nodes.forEach((vertex) -> nodes.add(vertex));
-//   vertices.entrySet()
-//    .forEach((entry) -> nodes.add(entry.getKey()));
+
     return nodes;
   }
 
