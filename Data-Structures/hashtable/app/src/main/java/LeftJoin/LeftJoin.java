@@ -21,8 +21,10 @@ public class LeftJoin {
     right.add("c", "cee");
 
     System.out.println(left.get("hi"));
-    System.out.println(right.hash("c"));
+    System.out.println(left.value("hi"));
 
+    System.out.println(right.hash("c"));
+    System.out.println(left.getHashNodesList()[263]);
     System.out.println(left.getHashNodesList().length);
     System.out.println(left.getHashNodesList()[263]);
     System.out.println(right.get(left.get("n")));
@@ -31,6 +33,7 @@ public class LeftJoin {
 //    System.out.println(right.contains(left.get(left.getHashNodesList()[263])));
     System.out.println(right.get(left.getHashNodesList()[933]));
     System.out.println(left);
+//    System.out.println(left.getHashNodesListValues());
 //    leftJoin(left,right);
   }
 
@@ -44,6 +47,7 @@ public class LeftJoin {
 //    LinkedList output= new LinkedList();
 //String[][] output=
 //    System.out.println(right.get(left.get("n")));
+    String[]values;
 if( left.getHashNodesList().length>0){
     for (int i = 0; i < left.getHashNodesList().length; i++) {
       output.add(left.getHashNodesList()[i], left.getHashNodesList()[i]);
