@@ -44,18 +44,16 @@ public class LeftJoin {
 //    LinkedList output= new LinkedList();
 //String[][] output=
 //    System.out.println(right.get(left.get("n")));
-
+if( left.getHashNodesList().length>0){
     for (int i = 0; i < left.getHashNodesList().length; i++) {
+      output.add(left.getHashNodesList()[i], left.getHashNodesList()[i]);
       if (right.contains(left.get(right.get(left.getHashNodesList()[i])))){
-        output.add(left.getHashNodesList()[i], left.getHashNodesList()[i]);
         output.add(left.getHashNodesList()[i], right.get(left.getHashNodesList()[i]));
-      }else
-      {
-        output.add(left.getHashNodesList()[i], left.getHashNodesList()[i]);
+      }else {
         output.add(left.getHashNodesList()[i], "NULL");
       }
     }
+  }
     return output;
-
   }
 }
