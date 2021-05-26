@@ -11,4 +11,15 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+  @Test public void testAddNode (){
+    Graph graph = new Graph();
+    Vertex vertex = new Vertex(1);
+    assertEquals(1,graph.addNode(vertex).getValue());
+    assertEquals("{Vertex{value=1}=[]}",graph.getVertices().toString());
+    Vertex vertex1 = new Vertex(2);
+    System.out.println(graph.addNode(vertex1).getValue());
+    System.out.println(graph.getVertices().toString());
+    assertEquals("{Vertex{value=2}=[], Vertex{value=1}=[]}",graph.getVertices().toString());
+
+  }
 }

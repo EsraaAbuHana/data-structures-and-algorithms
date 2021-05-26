@@ -6,43 +6,54 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Graph {
-  private HashMap <Vertex,ArrayList>vertices = new HashMap<Vertex,ArrayList>();
+  private HashMap<Vertex, ArrayList> vertices = new HashMap<Vertex, ArrayList>();
   private int size;
+
   public Graph() {
   }
 
-  public Vertex Node(Vertex vertex){
-    vertices.put(vertex,new ArrayList());
-size++;
-return vertex;
+  public Vertex addNode(Vertex vertex) {
+    vertices.put(vertex, new ArrayList());
+    this.size++;
+    return vertex;
   }
-public void addEdge(Vertex start,Vertex end,int wight){
-   if(this.vertices.containsKey(start)&&this.vertices.containsKey(end)){
-     ArrayList edges=this.vertices.get(start);
-     edges.add(new Edge(end,wight));
-     this.vertices.put(start,edges);
-   }
-}
+
+  public void addEdge(Vertex start, Vertex end, int wight) {
+    if (this.vertices.containsKey(start) && this.vertices.containsKey(end)) {
+      ArrayList edges = this.vertices.get(start);
+      edges.add(new Edge(end, wight));
+      this.vertices.put(start, edges);
+    }
+  }
+
   public HashMap<Vertex, ArrayList> getVertices() {
     return vertices;
   }
-public List getNodes(){
-   List<Vertex> nodes=new ArrayList<>();
- nodes.forEach((vertex) ->nodes.add(vertex));
+
+  public List getNodes() {
+    List<Vertex> nodes = new ArrayList<>();
+
+    nodes.forEach((vertex) -> nodes.add(vertex));
 //   vertices.entrySet()
 //    .forEach((entry) -> nodes.add(entry.getKey()));
-   return nodes;
-}
-public List getNeighbors(Vertex vertex){
-    if(vertices.containsKey(vertex)){
+    return nodes;
+  }
+
+  public List getNeighbors(Vertex vertex) {
+    if (vertices.containsKey(vertex)) {
       return vertices.get(vertex);
     }
-   return new ArrayList();
-}
+    return new ArrayList();
+  }
 
   public void setVertices(HashMap<Vertex, ArrayList> vertices) {
     this.vertices = vertices;
   }
+
+  public int size() {
+    return this.size;
+  }
+
   public int getSize() {
     return size;
   }

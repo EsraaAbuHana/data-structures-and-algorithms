@@ -11,6 +11,14 @@ this.wight=wight;
     this.vertex=vertex;
   }
 
+  @Override
+  public String toString() {
+    return "Edge{" +
+      "vertex=" + vertex +
+      ", wight=" + wight +
+      '}';
+  }
+
   public Vertex getVertex() {
     return vertex;
   }
