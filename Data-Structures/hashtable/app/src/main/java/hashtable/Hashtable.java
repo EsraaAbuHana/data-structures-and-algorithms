@@ -89,5 +89,19 @@ public class Hashtable<T> {
       "hashNodesList=" + Arrays.toString(hashNodesList) +
       '}';
   }
+  public Object value(T key) {
+    int index = hash(key);
+    Object value;
+    if (hashNodesList[index] != null) {
+      LinkedList linkedList = (LinkedList) hashNodesList[index];
+      Node current = linkedList.head;
+      while (current != null) {
+        if (((NodeHT) current.val).getKey() == key) {
+          return ((NodeHT<?>) current.val).getValue();
+        }
+        current=current.next;
+      }
+    }
+return "NULL";  }
 }
 
