@@ -39,3 +39,6 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 |31.|[Challenge Documentation](Data-Structures/hashtable/READme.md#code-challenge:-class-31)|[Repeated Word](Data-Structures/hashtable/app/src/main/java/hashtable/RepeatedWord.java)|
 |32.|[Challenge Documentation](Data-Structures/hashtable/READme.md#code-challenge:-class-32)||
 |33.|[Challenge Documentation](Data-Structures/hashtable/READme.md#code-challenge:-class-33)|[LeftJoin](Data-Structures/hashtable/app/src/main/java/LeftJoin/LeftJoin.java)|
+|34.|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1graNfRn3tAATJLBBU6fKyOlU143sn5USGnRTeoZLzHU/edit#gid=1422288328)|[string unique characters](https://docs.google.com/spreadsheets/d/1graNfRn3tAATJLBBU6fKyOlU143sn5USGnRTeoZLzHU/edit#gid=1422288328)|
+|35.|[Challenge Documentation](Data-Structures/graph/READme.md)|[Graph](Data-Structures/graph/lib/src/main/)|
+
