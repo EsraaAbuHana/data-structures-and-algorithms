@@ -33,6 +33,7 @@ public class TreeIntersection {
 
 public static Hashtable treeIntersection(BinarySearchTree first,BinarySearchTree second){
   Hashtable common=new Hashtable();
+  if(first.root==null||second.root==null){return null;}
   for (int i = 0; i < first.inOrder(first.root).size(); i++) {
     if (second.contains(i)){
       common.add(i,i);
