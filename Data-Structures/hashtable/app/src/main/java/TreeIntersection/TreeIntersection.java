@@ -21,9 +21,15 @@ public class TreeIntersection {
     System.out.println(first.contains(7));
     System.out.println(first);
     System.out.println(first.inOrder(first.root));
-    System.out.println(treeIntersection(first,second)); 
+    System.out.println(treeIntersection(first,second));
+      for (int i = 0; i < treeIntersection(first,second).getHashNodesList().length; i++) {
+        if(treeIntersection(first,second).getHashNodesList()[i]!=null){
+          System.out.println(treeIntersection(first,second).value(i));
+        }
+        }
+    }
 //    System.out.println();
-  }
+
 public static Hashtable treeIntersection(BinarySearchTree first,BinarySearchTree second){
   Hashtable common=new Hashtable();
   for (int i = 0; i < first.inOrder(first.root).size(); i++) {
