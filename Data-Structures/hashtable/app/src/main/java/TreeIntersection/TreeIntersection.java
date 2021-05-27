@@ -7,26 +7,27 @@ import hashtable.Hashtable;
 
 public class TreeIntersection {
   public static void main(String[] args) {
+
     BinarySearchTree first=new BinarySearchTree();
     BinarySearchTree second=new BinarySearchTree();
     first.add(5);
     first.add(1);
     first.add(7);
-    first.add(10);
-    first.add(4);
-    first.add(8);
-    first.add(7);
     first.add(11);
-    System.out.println(first.contains(7));
-    System.out.println(first.contains(7));
-    System.out.println(first);
-    System.out.println(first.inOrder(first.root));
-    System.out.println(treeIntersection(first,second));
-      for (int i = 0; i < treeIntersection(first,second).getHashNodesList().length; i++) {
-        if(treeIntersection(first,second).getHashNodesList()[i]!=null){
-          System.out.println(treeIntersection(first,second).value(i));
-        }
-        }
+    second.add(10);
+    second.add(4);
+    second.add(8);
+    second.add(7);
+
+    Hashtable hashtable=treeIntersection(first,second);
+//    System.out.println(hashtable.hash(7));
+//
+//    for (int i = 0; i < treeIntersection(first,second).getHashNodesList().length; i++) {
+//        if(treeIntersection(first,second).getHashNodesList()[i]!=null){
+//          System.out.println(hashtable.value(i));
+//          System.out.println(hashtable.hash(i));
+//        }
+//        }
     }
 //    System.out.println();
 
@@ -37,6 +38,7 @@ public static Hashtable treeIntersection(BinarySearchTree first,BinarySearchTree
       common.add(i,i);
     }
   }
+  System.out.println(common);
 return common;
 }
 }
