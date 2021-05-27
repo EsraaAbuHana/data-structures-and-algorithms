@@ -43,7 +43,21 @@ Takes in an arbitrary key and returns an index in the collection.
 ![](assest/31.jpg)
 #
 # Code Challenge: Class 32
-#
+# tree-intersection
+## Challenge
+ - Write a function that takes two binary tree as input.
+ - Without utilizing any of the built-in library methods.
+ - return a set of values found in both trees.
+
+## Approach and Efficiency
+- Create a hashTables with a size equal to that of the number of nodes that exist in the first tree .
+- The new hashTable will hold a common nodes.
+-  while we find them by looping over the first tree and check if the second one contains the current node ,of the first one in it . 
+- This method takes
+  -  O(n) time a where n represents the total nodes  in the first tree.
+  -  O(n)  space where n represents the total common nodes in the both trees.
+## Solution
+![](assest/CC32.jpg)
 # Code Challenge: Class 33
 # Left Join
 ## Challenge
