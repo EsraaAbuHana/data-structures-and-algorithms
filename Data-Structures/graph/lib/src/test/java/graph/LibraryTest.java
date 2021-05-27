@@ -20,10 +20,6 @@ public class LibraryTest {
     Vertex vertex0 = new Vertex(1);
     assertEquals(1, classUnderTest.addNode(vertex0).getValue());
     assertEquals("{Vertex{value=1}=[]}", classUnderTest.getVertices().toString());
-//    Vertex vertex01 = new Vertex(2);
-//   classUnderTest.addNode(vertex01).getValue();
-////    System.out.println(classUnderTest.getVertices().toString());
-//    assertEquals("{Vertex{value=2}=[], Vertex{value=1}=[]}",classUnderTest.getVertices().toString());
 
   }
 
@@ -49,11 +45,6 @@ public class LibraryTest {
     classUnderTest.addNode(vertex).getValue();
     classUnderTest.addNode(vertex1).getValue();
     assertEquals("{Vertex{value=1}=[], Vertex{value=2}=[]}", classUnderTest.getVertices().toString());
-
-//    classUnderTest.addEdge(vertex,vertex1,3);
-
-//    System.out.println(classUnderTest.getVertices().get(vertex));
-//    assertEquals("{Vertex{value=1}=[Edge{vertex=Vertex{value=2}, wight=3}], Vertex{value=2}=[]}",classUnderTest.getVertices().toString());
 
   }
 
@@ -101,14 +92,19 @@ public class LibraryTest {
     System.out.println(classUnderTest.addNode(vertex02).getValue());
     classUnderTest.addNode(vertex03).getValue();
 
-//
-//    classUnderTest.addEdge(vertex01,vertex02,3);
-//    classUnderTest.addEdge(vertex01,vertex03,1);
-
-//    System.out.println(classUnderTest.getVertices().get(vertex));
     assertEquals(3,classUnderTest.size());
 
 }
+  @Test public void testOneNodeAndEdge(){
+    Graph classUnderTest = new Graph();
+    Vertex vertex01 = new Vertex(1);
+    System.out.println(classUnderTest.addNode(vertex01).getValue());
+    assertEquals(1,classUnderTest.size());
+    classUnderTest.addEdge(vertex01,null,3);
+    assertEquals("[Edge{vertex=Vertex{value=1}, wight=null}]", classUnderTest.getVertices().get(vertex01).toString());
+    assertEquals("{Vertex{value=1}=[Edge{vertex=Vertex{value=1}, wight=null}]}", classUnderTest.getVertices().toString());
+
+  }
 //  @Test public void testGetVerticesWithEdges (){
 //    Graph classUnderTest = new Graph();
 //    Vertex vertex = new Vertex(1);

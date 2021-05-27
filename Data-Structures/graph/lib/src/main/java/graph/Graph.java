@@ -19,10 +19,14 @@ public class Graph {
   }
 
   public void addEdge(Vertex start, Vertex end, int wight) {
+    ArrayList edges = this.vertices.get(start);
+    this.vertices.put(start, edges);
+
     if (this.vertices.containsKey(start) && this.vertices.containsKey(end)) {
-      ArrayList edges = this.vertices.get(start);
       edges.add(new Edge(end, wight));
-      this.vertices.put(start, edges);
+    }else {
+      edges.add(new Edge(start));
+
     }
   }
 
