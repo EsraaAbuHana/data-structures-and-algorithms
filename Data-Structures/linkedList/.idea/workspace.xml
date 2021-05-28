@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc940f9b-1c5b-4a0a-a733-62267ffdbce8" name="Default Changelist" comment="">
-<<<<<<< HEAD
+    <list default="true" id="10b90df2-5674-43e9-a44a-6a3e15e1f25b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 0fc02f5fca547dabd23b509e47d5489000e30c97
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LLProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LLProblems.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1qszQRi2V27G4aJiyL9DNxGLjWL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,20 +58,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$/app/src/main/java/linkedList" />
-<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-=======
-    <property name="last_opened_file_path" value="$USER_HOME$/401/quotes" />
->>>>>>> 0fc02f5fca547dabd23b509e47d5489000e30c97
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest">
-<<<<<<< HEAD
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedList.LinkedList" />
-      <module name="linkedList.app.main" />
+  <component name="RunManager" selected="Application.LLProblems">
+    <configuration name="LLProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedList.LLProblems" />
+      <module name="Data-Structures.linkedList.app.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="linkedList.*" />
@@ -83,28 +76,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-=======
-    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
->>>>>>> 0fc02f5fca547dabd23b509e47d5489000e30c97
     </configuration>
     <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -127,12 +98,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testAppHasAGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.testAppHasAGreeting&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -231,27 +202,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.LinkedList" />
       <item itemvalue="Gradle.linkedList:app" />
-      <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
       <item itemvalue="Gradle.AppTest.testInclodesMethod" />
       <item itemvalue="Gradle.AppTest.testToStringMethod" />
-<<<<<<< HEAD
-=======
       <item itemvalue="Gradle.AppTest.testFindNodeK" />
->>>>>>> 0fc02f5fca547dabd23b509e47d5489000e30c97
       <item itemvalue="Gradle.AppTest" />
+      <item itemvalue="Application.LLProblems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LLProblems" />
         <item itemvalue="Gradle.AppTest" />
-<<<<<<< HEAD
-=======
         <item itemvalue="Gradle.AppTest.testFindNodeK" />
->>>>>>> 0fc02f5fca547dabd23b509e47d5489000e30c97
         <item itemvalue="Gradle.AppTest.testToStringMethod" />
         <item itemvalue="Gradle.AppTest.testInclodesMethod" />
-        <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
       </list>
     </recent_temporary>
   </component>
@@ -283,22 +247,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java</url>
-<<<<<<< HEAD
-          <line>24</line>
-          <properties class="linkedList.LinkedList" method="insert">
-=======
           <line>77</line>
-          <properties class="linkedList.LinkedList" method="append">
->>>>>>> 0fc02f5fca547dabd23b509e47d5489000e30c97
-            <option name="EMULATED" value="true" />
-          </properties>
+          <properties class="linkedList.LinkedList" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/linkedList$linkedList.ic" NAME="linkedList Coverage Results" MODIFIED="1617896112329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/linkedList$C__Users_user_codefellows_data_structures_and_algorithms_Data_Structures_linkedList_app_src_main_java_linkedList.ic" NAME="$PROJECT_DIR$/app/src/main/java/linkedList Coverage Results" MODIFIED="1617896274093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/linkedList$linkedList.ic" NAME="linkedList Coverage Results" MODIFIED="1617896112329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
