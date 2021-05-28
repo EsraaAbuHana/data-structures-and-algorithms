@@ -10,11 +10,8 @@ public class Library {
   }
 
   public static void main(String[] args) {
-    int[] arr = {0, 1, 2, 0, 1, 2};
-    for (int i = 0; i < arr.length; i++) {
-      System.out.print(arr[i] + ",");
-    }
-    System.out.println("\n");
+//    int[] arr = {0, 1, 2, 0, 1, 2};
+    int[] arr = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};
     sortArr(arr);
     for (int i = 0; i < arr.length; i++) {
       System.out.print(arr[i] + ",");
@@ -22,31 +19,43 @@ public class Library {
   }
 
   public static void sortArr(int[] arr) {
-    int temp = 0;
-    int zeros = 0;
-
-    int tows = 1;
-//    0,1,2,0,1,2,
-
+    //third solution
+    int ones = 0, zeros = 0;
     for (int i = 0; i < arr.length; i++) {
-        if (arr[i] == 0) {
-//          arr[i]=1;
-          arr[i++]=arr[zeros] ;
-
-          arr[zeros] = 0;
-          zeros++;
-        } else if (arr[i] == 2) {
-//          temp = arr[arr.length - tows];
-//          arr[i] =    arr[arr.length - tows];
-          arr[arr.length - tows] = 2;
-//          arr[i]=1;
-          arr[i] = arr[i++];
-
-          tows++;
-i--;
-        }
-
-
+      if (arr[i] == 0) {
+        zeros++;
+      } else if (arr[i] == 1) {
+        ones++;
+      }
+    }
+      for (int j = 0; j < zeros; j++) {
+        arr[j] = 0;
+      }
+      for (int j = zeros; j < zeros + ones; j++) {
+        arr[j] = 1;
+      }
+      for (int j = zeros + ones; j < arr.length; j++) {
+        arr[j] = 2;
+      }
+      //second
+//    int temp = 0,zeros = 0;
+//    int tows = 1;
+//    for (int i = 0; i < arr.length; i++) {
+//      if (arr[i] == 0) {
+////          arr[i]=1;
+//        arr[i++] = arr[zeros];
+//        arr[zeros] = 0;
+//        zeros++;
+//      } else if (arr[i] == 2) {
+////          temp = arr[arr.length - tows];
+////          arr[i] =    arr[arr.length - tows];
+//        arr[arr.length - tows] = 2;
+////          arr[i]=1;
+//        arr[i] = arr[i++];
+//        tows++;
+//        i--;
+//      }
+//first
 //      if (i == 0) {
 //        if (arr[0] > arr[1]) {
 //          temp = arr[0];
@@ -60,24 +69,19 @@ i--;
 //          temp = prev;
 //          prev = arr[i];
 //          arr[i] = temp;
-//
 //        }
-//
 //        if (next < arr[i]) {
 //          temp = next;
 //          next = arr[i];
 //          arr[i] = temp;
-//
 //        }
 //        if (arr[i] < prev) {
 //          temp = prev;
 //          prev = arr[i];
 //          arr[i] = temp;
-//
 //        }
 //      }
-//
-//
-    }
+
+
   }
 }
