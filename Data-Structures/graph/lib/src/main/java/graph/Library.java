@@ -19,69 +19,39 @@ public class Library {
   }
 
   public static void sortArr(int[] arr) {
-    //third solution
-    int ones = 0, zeros = 0;
+    //second
+    int tows = 1,zeros = 0;
     for (int i = 0; i < arr.length; i++) {
       if (arr[i] == 0) {
+        arr[i] = arr[zeros];
+        arr[zeros] = 0;
         zeros++;
-      } else if (arr[i] == 1) {
-        ones++;
+      }
+      if (arr[i] == 2&&arr.length-tows>i) {
+        arr[i] = arr[arr.length - tows];
+        arr[arr.length - tows] = 2;
+        i--;
+        tows++;
       }
     }
-      for (int j = 0; j < zeros; j++) {
-        arr[j] = 0;
-      }
-      for (int j = zeros; j < zeros + ones; j++) {
-        arr[j] = 1;
-      }
-      for (int j = zeros + ones; j < arr.length; j++) {
-        arr[j] = 2;
-      }
-      //second
-//    int temp = 0,zeros = 0;
-//    int tows = 1;
+    //third solution
+//    int ones = 0, zeros = 0;
 //    for (int i = 0; i < arr.length; i++) {
 //      if (arr[i] == 0) {
-////          arr[i]=1;
-//        arr[i++] = arr[zeros];
-//        arr[zeros] = 0;
 //        zeros++;
-//      } else if (arr[i] == 2) {
-////          temp = arr[arr.length - tows];
-////          arr[i] =    arr[arr.length - tows];
-//        arr[arr.length - tows] = 2;
-////          arr[i]=1;
-//        arr[i] = arr[i++];
-//        tows++;
-//        i--;
+//      } else if (arr[i] == 1) {
+//        ones++;
 //      }
-//first
-//      if (i == 0) {
-//        if (arr[0] > arr[1]) {
-//          temp = arr[0];
-//          arr[0] = arr[1];
-//          arr[1] = temp;
-//        }
-//      }else {
-//        int prev=arr[i-1];
-//        int next=arr[i+1];
-//        if (arr[i] < prev) {
-//          temp = prev;
-//          prev = arr[i];
-//          arr[i] = temp;
-//        }
-//        if (next < arr[i]) {
-//          temp = next;
-//          next = arr[i];
-//          arr[i] = temp;
-//        }
-//        if (arr[i] < prev) {
-//          temp = prev;
-//          prev = arr[i];
-//          arr[i] = temp;
-//        }
+//    }
+//      for (int j = 0; j < zeros; j++) {
+//        arr[j] = 0;
 //      }
-
+//      for (int j = zeros; j < zeros + ones; j++) {
+//        arr[j] = 1;
+//      }
+//      for (int j = zeros + ones; j < arr.length; j++) {
+//        arr[j] = 2;
+//      }
 
   }
 }
