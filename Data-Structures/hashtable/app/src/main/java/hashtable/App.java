@@ -9,6 +9,25 @@ import linkedList.Node;
 public class App {
 
     public static void main(String[] args) {
+Hashtable hashtable=new Hashtable();
+//      System.out.println(hashtable.get("groot"));
+//
+//      hashtable.add("groot", "esraa");
+//      System.out.println(hashtable.hash("groot"));
+//
+//      System.out.println(new Hashtable().hash("groot"));
+//      System.out.println(hashtable);
+//      System.out.println(hashtable.get("g"));
+//      System.out.println(hashtable.get("r"));
+//      System.out.println(hashtable.get("o"));
+//      System.out.println(hashtable.get("o"));
+//      System.out.println(hashtable.get("t"));
+
+//      System.out.println(hashtable.get("esraa"));
+//      System.out.println(hashtable.contains("groot"));
+//      System.out.println(hashtable.contains("esraa"));
+      System.out.println(RepeatedWord .repeatedWord("word is not this word is" ));
+
       LinkedList linkedList=new LinkedList();
       int []arr={1,4,3,8,1,13,12,1,5};
       for (int i = 0; i < arr.length; i++) {
