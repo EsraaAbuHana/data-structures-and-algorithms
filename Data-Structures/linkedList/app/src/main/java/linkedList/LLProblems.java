@@ -2,19 +2,40 @@ package linkedList;
 
 public class LLProblems {
   public static void main(String[] args) {
-    LinkedList ll3= new LinkedList();
-    LinkedList ll4 = new LinkedList();
-    int[] test2 = {1,2,4,6,9,13};
-    int[] test3 = {1,3,4,10,20,30};
+        LinkedList ll2= new LinkedList();
+    int[] test2={1,2,3,4,5};
+        for (int i = 0; i < test2.length; i++) {
+      ll2.append(test2[i]);
+    }
+   deleteEnd(ll2,2);
+    System.out.println(ll2);
 
-    for (int i = 0; i < test2.length; i++) {
-      ll3.append(test2[i]);
+//    LinkedList ll3= new LinkedList();
+//    LinkedList ll4 = new LinkedList();
+//    int[] test2 = {1,2,4,6,9,13};
+//    int[] test3 = {1,3,4,10,20,30};
+//
+//    for (int i = 0; i < test2.length; i++) {
+//      ll3.append(test2[i]);
+//    }
+//    for (int i = 0; i < test3.length; i++) {
+//      ll4.append(test3[i]);
+//    }
+//    merge1(ll3, ll4);
+//    System.out.println(ll3);
+  }
+  public static void  deleteEnd(LinkedList ll,int n){
+    Node current=ll.head;
+    Node current2=ll.head;
+    int i=0;
+    while (current!=null){
+      if (i>n){
+        current2=current2.next;
+      }
+      current=current.next;
+      i++;
     }
-    for (int i = 0; i < test3.length; i++) {
-      ll4.append(test3[i]);
-    }
-    merge1(ll3, ll4);
-    System.out.println(ll3);
+    current2.next=current2.next.next;
   }
   //  Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
 //    Examples:
@@ -87,17 +108,8 @@ public class LLProblems {
       current = current.next.next;
     }
   }
-    
-//  public static void merge2(LinkedList ll,LinkedList ss) {
-//    Node current = ll.head;
-//
-//    while (current != null && current.next != null && current.next.next != null) {
-//      int temp = current.val;
-//      current.val = current.next.val;
-//      current.next.val = temp;
-//      current = current.next.next;
-//    }
-//  }
+
+
 
 
 }

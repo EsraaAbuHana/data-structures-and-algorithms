@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10b90df2-5674-43e9-a44a-6a3e15e1f25b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LLProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LLProblems.java" afterDir="false" />
     </list>
@@ -202,12 +201,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.LLProblems" />
       <item itemvalue="Gradle.linkedList:app" />
       <item itemvalue="Gradle.AppTest.testInclodesMethod" />
       <item itemvalue="Gradle.AppTest.testToStringMethod" />
       <item itemvalue="Gradle.AppTest.testFindNodeK" />
       <item itemvalue="Gradle.AppTest" />
-      <item itemvalue="Application.LLProblems" />
     </list>
     <recent_temporary>
       <list>
@@ -222,7 +221,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc940f9b-1c5b-4a0a-a733-62267ffdbce8" name="Default Changelist" comment="" />
+      <changelist id="10b90df2-5674-43e9-a44a-6a3e15e1f25b" name="Default Changelist" comment="" />
       <created>1617883068268</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
