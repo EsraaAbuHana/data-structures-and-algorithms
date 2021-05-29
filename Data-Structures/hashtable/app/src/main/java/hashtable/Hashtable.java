@@ -71,9 +71,8 @@ public class Hashtable<T> {
     if (hashNodesList[index] != null) {
       LinkedList linkedList = (LinkedList) hashNodesList[index];
       Node current = linkedList.head;
-
       while (current != null) {
-        if (((NodeHT) current.val).getKey() == key) {
+        if (((NodeHT) current.val).getKey().equals(key) ) {
           return true;
         }
         current=current.next;
@@ -88,6 +87,19 @@ public class Hashtable<T> {
     return "Hashtable{" +
       "hashNodesList=" + Arrays.toString(hashNodesList) +
       '}';
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Hashtable<?> hashtable = (Hashtable<?>) o;
+    return Arrays.equals(hashNodesList, hashtable.hashNodesList);
+  }
+
+  @Override
+  public int hashCode() {
+    return Arrays.hashCode(hashNodesList);
   }
 }
 
