@@ -30,11 +30,11 @@ public class LeftJoin {
     System.out.println(right.get(left.get("n")));
     System.out.println(left.hash("hi"));
     System.out.println(left.contains("hi"));
-//    System.out.println(right.contains(left.get(left.getHashNodesList()[263])));
     System.out.println(right.get(left.getHashNodesList()[933]));
     System.out.println(left);
 //    System.out.println(left.getHashNodesListValues());
-//    leftJoin(left,right);
+    leftJoin(left,right);
+    System.out.println( leftJoin(left,right));
   }
 
   //  LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row.

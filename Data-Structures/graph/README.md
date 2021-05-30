@@ -55,3 +55,17 @@
   - input : two unique Nodes that are in the Graph.
   - Include the ability to have a “weight”. 
   - It will add an Edge to each of the provided Nodes list of neighbors. 
+
+# Code Challenge: Class 36
+# Implement a breadth-first traversal on a graph
+
+ ## Challenge
+ - writhe a m method which  accepts a starting node and do traversal  over graph. 
+ -  return a collection of nodes in the order they were visited. Display the collection.
+## Approach and Efficiency
+- Time : O(n^2)
+  - loop over the breadth ,then loop in to check all the visitors .
+- Space: O(n^3)
+   - for saving the Vertices in three storage each has O(n)
+## Solution
+![](asesst/CC36.jpg)
