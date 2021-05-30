@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/graph/BreadthFirst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/test/java/graph/BreadthFirstTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/graph/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/graph/LibraryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hashtable/app/src/main/java/LeftJoin/LeftJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/app/src/main/java/LeftJoin/LeftJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +65,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="JUnit.BreadthFirstTest.addOneTest">
+  <component name="RunManager" selected="JUnit.BreadthFirstTest">
     <configuration name="BreadthFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graph.lib.test" />
       <extension name="coverage">
@@ -152,9 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BreadthFirstTest" />
         <item itemvalue="JUnit.BreadthFirstTest.addOneTest" />
         <item itemvalue="JUnit.BreadthFirstTest.testBreadthFirst" />
-        <item itemvalue="JUnit.BreadthFirstTest" />
         <item itemvalue="JUnit.BreadthFirstTest.oneItemGraph" />
         <item itemvalue="JUnit.BreadthFirstTest.addTest" />
       </list>
