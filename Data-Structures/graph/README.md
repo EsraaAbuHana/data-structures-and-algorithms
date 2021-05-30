@@ -57,7 +57,7 @@
   - It will add an Edge to each of the provided Nodes list of neighbors. 
 
 # Code Challenge: Class 36
-# Implement a breadth-first traversal on a graph.
+# Implement a breadth-first traversal on a graph
 
  ## Challenge
  - writhe a m method which  accepts a starting node and do traversal  over graph. 
