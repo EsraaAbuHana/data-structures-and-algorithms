@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hashtable/app/src/main/java/LeftJoin/LeftJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/app/src/main/java/LeftJoin/LeftJoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hashtable/app/src/main/java/hashtable/Hashtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hashtable/app/src/main/java/hashtable/Hashtable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
