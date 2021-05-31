@@ -63,7 +63,6 @@ Vertex locCity=null;
           locCity = edge.getVertex();
           cost=cost+(int)edge.getWight();
 
-
           break;
         }
       }

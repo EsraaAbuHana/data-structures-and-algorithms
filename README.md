@@ -42,3 +42,4 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 |34.|[Challenge Documentation](https://docs.google.com/spreadsheets/d/1graNfRn3tAATJLBBU6fKyOlU143sn5USGnRTeoZLzHU/edit#gid=1422288328)|[string unique characters](https://docs.google.com/spreadsheets/d/1graNfRn3tAATJLBBU6fKyOlU143sn5USGnRTeoZLzHU/edit#gid=1422288328)|
 |35.|[Challenge Documentation](Data-Structures/graph/READme.md)|[Graph](Data-Structures/graph/lib/src/main/)|
 |36.|[Challenge Documentation](Data-Structures/graph/READme.md#Implement-a-breadth-first-traversal-on-a-graph)|[Implement a breadth-first traversal](Data-Structures/graph/lib/src/main/java/graph/BreadthFirst.java)|
+|37.|[Challenge Documentation](Data-Structures/graph/READme.md)|[GetEdge](Data-Structures/graph/lib/src/main/java/GetEdge/GetEdge.java)|
