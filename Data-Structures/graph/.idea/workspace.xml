@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,20 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="JUnit.BreadthFirstTest">
+  <component name="RunManager" selected="Application.GetEdge">
+    <configuration name="GetEdge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GetEdge.GetEdge" />
+      <module name="graph.lib.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GetEdge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BreadthFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graph.lib.test" />
       <extension name="coverage">
@@ -92,22 +106,6 @@
       <option name="PACKAGE_NAME" value="graph" />
       <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstTest" />
       <option name="METHOD_NAME" value="addOneTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BreadthFirstTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graph.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstTest" />
-      <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetEdge" />
         <item itemvalue="JUnit.BreadthFirstTest" />
         <item itemvalue="JUnit.BreadthFirstTest.addOneTest" />
         <item itemvalue="JUnit.BreadthFirstTest.testBreadthFirst" />
         <item itemvalue="JUnit.BreadthFirstTest.oneItemGraph" />
-        <item itemvalue="JUnit.BreadthFirstTest.addTest" />
       </list>
     </recent_temporary>
   </component>

@@ -69,3 +69,14 @@
    - for saving the Vertices in three storage each has O(n)
 ## Solution
 ![](asesst/CC36.jpg)
+# Code Challenge: Class 37
+# GetEdge 
+
+ ## Challenge
+ - Given a business trip itinerary, and Airlines map.
+ - Check is the trip possible with direct flights? If so.
+ -  find the total trip cost.
+## Approach and Efficiency
+
+## Solution
+
