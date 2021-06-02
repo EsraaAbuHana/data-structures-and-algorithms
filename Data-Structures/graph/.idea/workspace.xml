@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/DepthFirst/DepthFirst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/test/java/graph/DepthFirstTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +65,9 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.26805556" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.GetEdge">
+  <component name="RunManager" selected="JUnit.DepthFirstTest.addTest">
     <configuration name="GetEdge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GetEdge.GetEdge" />
       <module name="graph.lib.main" />
@@ -111,22 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreadthFirstTest.oneItemGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graph.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstTest" />
-      <option name="METHOD_NAME" value="oneItemGraph" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BreadthFirstTest.testBreadthFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graph.lib.test" />
       <extension name="coverage">
@@ -143,13 +128,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DepthFirstTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graph.lib.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
+      <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepthFirstTest.addTest" />
         <item itemvalue="Application.GetEdge" />
         <item itemvalue="JUnit.BreadthFirstTest" />
         <item itemvalue="JUnit.BreadthFirstTest.addOneTest" />
         <item itemvalue="JUnit.BreadthFirstTest.testBreadthFirst" />
-        <item itemvalue="JUnit.BreadthFirstTest.oneItemGraph" />
       </list>
     </recent_temporary>
   </component>
