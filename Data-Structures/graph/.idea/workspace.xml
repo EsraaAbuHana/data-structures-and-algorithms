@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/DepthFirstTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Stack.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/DepthFirst/DepthFirst.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/Vertex.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/BreadthFirstTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/BreadthFirst.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Node.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/LibraryTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/Graph.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1t4OQQ77zYbVebRpllnqUH7o83k" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,15 +74,15 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.26805556" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.GetEdge">
-    <configuration name="GetEdge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GetEdge.GetEdge" />
-      <module name="graph.lib.main" />
+  <component name="RunManager" selected="JUnit.DepthFirstTest.addTestMoreThanOneNode">
+    <configuration name="DepthFirstTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
+      <module name="graph.lib.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GetEdge.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreadthFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepthFirstTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graph.lib.test" />
       <extension name="coverage">
         <pattern>
@@ -89,29 +99,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BreadthFirstTest.addOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graph.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstTest" />
-      <option name="METHOD_NAME" value="addOneTest" />
+      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
+      <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreadthFirstTest.oneItemGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepthFirstTest.addTestMoreSeveralEdgesForNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graph.lib.test" />
       <extension name="coverage">
         <pattern>
@@ -120,14 +115,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstTest" />
-      <option name="METHOD_NAME" value="oneItemGraph" />
+      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
+      <option name="METHOD_NAME" value="addTestMoreSeveralEdgesForNode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreadthFirstTest.testBreadthFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepthFirstTest.addTestMoreThanOneNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graph.lib.test" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +131,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstTest" />
-      <option name="METHOD_NAME" value="testBreadthFirst" />
+      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
+      <option name="METHOD_NAME" value="addTestMoreThanOneNode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepthFirstTest.addTestWithOneNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graph.lib.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
+      <option name="METHOD_NAME" value="addTestWithOneNode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GetEdge" />
-        <item itemvalue="JUnit.BreadthFirstTest" />
-        <item itemvalue="JUnit.BreadthFirstTest.addOneTest" />
-        <item itemvalue="JUnit.BreadthFirstTest.testBreadthFirst" />
-        <item itemvalue="JUnit.BreadthFirstTest.oneItemGraph" />
+        <item itemvalue="JUnit.DepthFirstTest.addTestMoreThanOneNode" />
+        <item itemvalue="JUnit.DepthFirstTest.addTestWithOneNode" />
+        <item itemvalue="JUnit.DepthFirstTest.addTestMoreSeveralEdgesForNode" />
+        <item itemvalue="Application.DepthFirstTest" />
+        <item itemvalue="JUnit.DepthFirstTest.addTest" />
       </list>
     </recent_temporary>
   </component>
