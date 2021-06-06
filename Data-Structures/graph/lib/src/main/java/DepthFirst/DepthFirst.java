@@ -4,33 +4,34 @@ import graph.Edge;
 import graph.Graph;
 import graph.Vertex;
 import stacksandqueues.Node;
+import stacksandqueues.Queue;
 import stacksandqueues.Stack;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
 
-public class DepthFirst {
+public class DepthFirst extends Graph{
   public static void main(String[] args) {
 
   }
-  public static ArrayList<Vertex> depthFirst(Graph g) {
-    Vertex current =  (Vertex) g.getNodes().get(0);
-    ArrayList<Vertex> output = new ArrayList<>();
-//    Stack<Vertex> stack =  new Stack();
-    Stack stack =  new Stack();
-    HashSet<Vertex> visited = new HashSet<>();
-    stack.push(current);
-    visited.add(current);
-    while (stack.peek() != null) {
-      current = (Vertex) stack.pop();
-      output.add(current);
-      for (Edge e : (ArrayList<Edge>) g.getNeighbors(current)) {
-        if (!visited.contains(e.getVertex().getValue())) {
-          visited.add((Vertex) e.getVertex().getValue());
-          System.out.println(visited);
-          stack.push(e.getVertex().getValue());
+  public  ArrayList<Vertex> depthFirst (Vertex vertex) {
+    ArrayList nodes = new ArrayList<>();
+    Stack depth = new Stack();
+    Set visited = new HashSet();
+    depth.push(vertex);
+    visited.add(vertex);
+    while (!depth.isEmpty()) {
+      Vertex front = (Vertex) ((Node) depth.pop()).getValue();
+      nodes.add(front.getValue());
+      for (Object child : this.getNeighbors(front)){
+        Vertex currentVertex = ((Edge) child).getVertex();
+        if (!visited.contains(currentVertex)) {
+          visited.add(currentVertex);
+          depth.push(currentVertex);
         }
       }
     }
-    return output;
+    return nodes;
+
   }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 public class DepthFirstTest extends DepthFirst {
   @Test
   public void addTest() {
-    BreadthFirst graph = new BreadthFirst();
+    DepthFirst graph = new DepthFirst();
     Vertex A = new Vertex("A");
     graph.addNode(A);
     Vertex B = new Vertex("B");
@@ -37,11 +37,13 @@ public class DepthFirstTest extends DepthFirst {
     graph.addEdge(F, H, 0);
 
     System.out.println(graph.getVertices());
-    System.out.println(graph.breadthFirst(A));
+    System.out.println(graph.depthFirst(A));
     List<Vertex> nodes=graph.getNodes();
-    ArrayList <Vertex>output=depthFirst(graph);
-    System.out.println(output);//A, B, C, G, D, E, H, F
-    //[A, B, D, C, E, F, H, G]
+    ArrayList <Vertex>output=depthFirst(A);
+    System.out.println(output);//A, D, H, F, E, B, C, G
+    //[A, D, H, F, E, B, C, G]
+    System.out.println(graph.depthFirst(A));
+
 
   }
 }
