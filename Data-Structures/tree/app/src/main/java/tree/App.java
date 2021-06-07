@@ -51,6 +51,7 @@ public class App {
 //    System.out.println(minValue(root2));
 //    System.out.println(isBST(root4));
 //    System.out.println(checkHasSameLeaves(root5, root6));
+    System.out.println(maxSum(root));
   }
 
 
@@ -151,6 +152,42 @@ public class App {
   public static boolean checkHasSameLeaves(Node r1, Node r2) {
 
     return countLeaves(r1) == countLeaves(r2);
+  }
+
+    public static int maxSum(Node r) {
+
+    if (r == null) {
+      return 0;
+    }
+
+    int maxLeft = 0, maxRight = 0, max = (int) r.value;
+
+    maxLeft = max + maxSum(r.left);
+
+    maxRight = max + maxSum(r.right);
+
+    if (maxLeft > maxRight) {
+      max = maxLeft;
+    } else {
+
+      max = maxRight;
+    }
+
+    return max;
+
+   }
+  public static int maxSumSecond(Node r) {
+    if (r == null) return 0;
+    return maxSumHelper(r, 0);
+  }
+
+  public static int maxSumHelper(Node r, int sum) {
+    if (r == null) return sum;
+    sum = sum + (int) r.value;
+    if ((r != null && r.left == null && r.right == null)) return sum;
+    int sumLift = maxSumHelper(r.left, sum);
+    int sumRight = maxSumHelper(r.right, sum);
+    return sumLift > sumRight ? sumLift : sumRight;
   }
 
 }
