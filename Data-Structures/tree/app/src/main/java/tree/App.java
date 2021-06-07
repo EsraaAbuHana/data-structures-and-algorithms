@@ -5,21 +5,152 @@ package tree;
 
 public class App {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    BinaryTree binaryTree = new BinarySearchTree();
+    Node root = new Node(5);
+    root.left = new Node(3);
+    root.left.left = new Node(3);
+    root.left.right = new Node(8);
+    root.right = new Node(9);
+    root.right.right = new Node(10);
+    root.right.left = new Node(11);
 
-BinarySearchTree binarySearchTree=new BinarySearchTree();
-binarySearchTree.add(5);
-      binarySearchTree.add(1);
-      binarySearchTree.add(7);
-      binarySearchTree.add(10);
-      System.out.println(binarySearchTree.contains(7));
-      System.out.println(binarySearchTree.contains(8));
-      System.out.println(binarySearchTree.contains(5));
-      System.out.println(binarySearchTree.contains(-1));
-      System.out.println( "preOrder : "+binarySearchTree.preOrder(binarySearchTree.root));
-      System.out.println("inOrder : "+ binarySearchTree.inOrder(binarySearchTree.root));
-      System.out.println("postOrder : "+ binarySearchTree.postOrder(binarySearchTree.root));
-      System.out.println(binarySearchTree);
+    Node root2 = new Node(150);
+    root2.left = new Node(100);
+    root2.left.left = new Node(4);
+    root2.left.right = new Node(2);
+    root2.right = new Node(3);
+    root2.right.left = new Node(11);
+    root2.right.left.left = new Node(11);
+    root2.right.left.left.left = new Node(11);
+    root2.right.left.left.left.left = new Node(15);
+    Node root3 = new Node(6);
 
+    Node root4 = new Node(25);
+    root4.left = new Node(15);
+    root4.left.left = new Node(11);
+    root4.left.right = new Node(16);
+    root4.right = new Node(40);
+    root4.right.right = new Node(45);
+    root4.right.left = new Node(30);
+    root4.right.left.right = new Node(35);
+    Node root5 = new Node(1);
+    root5.left = new Node(1);
+    root5.left.left = new Node(1);
+    root5.left.left.left = new Node(1);
+    Node root6 = new Node(1);
+//    root6.left=new Node(1);
+
+//      System.out.println(sum(root));//59
+//      System.out.println(merge(root, root2));//11,4,7,10,12,11,10
+//      System.out.println(pathSum(root,25));
+//    System.out.println(oddSum(root));
+//      System.out.println(maxDepth(root2));
+//      System.out.println(minDepth(root2));
+//    System.out.println(maxValue(root2));
+//    System.out.println(minValue(root2));
+//    System.out.println(isBST(root4));
+//    System.out.println(checkHasSameLeaves(root5, root6));
+  }
+
+
+  public static Node merge(Node r1, Node r2) {
+    if (r1 == null && r2 == null)
+      return null;
+    if (r1 == null)
+      return r2;
+    if (r2 == null)
+      return r1;
+    r1.value = (int) r1.value + (int) r2.value;
+    r1.left = merge(r1.left, r2.left);
+    r1.right = merge(r1.right, r2.right);
+    return r1;
+  }
+
+  public static int sum(Node r) {
+    if (r == null) return 0;
+    return (int) r.value + sum(r.left) + sum(r.right);
+
+  }
+
+  public static int oddSum(Node r) {
+    if (r == null) return 0;
+    if ((int) r.value % 2 == 0) return oddSum(r.left) + oddSum(r.right);
+
+    return (int) r.value + oddSum(r.left) + oddSum(r.right);
+
+  }
+
+  public static boolean pathSum(Node r, int sum) {
+    if (r == null)
+      return false;
+    if ((int) r.value > sum)
+      return false;
+    if (r.left == null && r.right == null && sum == (int) r.value)
+      return true;
+    return pathSum(r.left, sum - (int) r.value) || pathSum(r.right, sum - (int) r.value);
+  }
+
+  public static int maxDepth(Node r) {
+    int maxLeft = 0, maxRight = 0;
+    if (r == null) return 0;
+    maxLeft = maxDepth(r.left);
+    maxRight = maxDepth(r.right);
+    if (maxLeft > maxRight) return maxLeft + 1;
+    return maxRight + 1;
+  }
+
+  public static int minDepth(Node r) {
+    int minLeft = 0, minRight = 0;
+    if (r == null) return 0;
+    minLeft = minDepth(r.left);
+    minRight = minDepth(r.right);
+    if (minLeft < minRight) return minLeft + 1;
+    return minRight + 1;
+  }
+
+  public static int maxValue(Node r) {
+    if (r == null) return -1000000000;
+    int max = (int) r.value;
+    int maxLeft = maxValue(r.left), maxRight = maxValue(r.right);
+    if (maxLeft > max) max = maxLeft;
+    if (maxRight > max) max = maxRight;
+    return max;
+  }
+
+  public static int minValue(Node r) {
+    if (r == null) return 100000000;
+    int min = (int) r.value;
+    int minLeft = minValue(r.left), minRight = minValue(r.right);
+    if (minLeft < min) min = minLeft;
+    if (minRight < min) min = minRight;
+    return min;
+  }
+
+  public static boolean isBST(Node r) {
+
+    return isBSTHelper(r, -1000000000, 1000000000);
+  }
+
+  public static boolean isBSTHelper(Node r, int min, int max) {
+    if (r == null) return true;
+    if ((int) r.value > max || (int) r.value < min) return false;
+    return isBSTHelper(r.left, min, (int) r.value) && isBSTHelper(r.right, (int) r.value, max);
+  }
+
+  public static int countLeaves(Node r) {
+    if (r == null) {
+      return 0;
     }
+    if (r.right == null && r.left == null) {
+      return 1;
+    }
+    return countLeaves(r.left) + countLeaves(r.right);
+  }
+
+  public static boolean checkHasSameLeaves(Node r1, Node r2) {
+
+    return countLeaves(r1) == countLeaves(r2);
+  }
+
 }
