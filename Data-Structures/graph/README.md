@@ -80,5 +80,23 @@
 - Time complexity :O(n * d)
 - Space :  O(1)
 ## Solution
+<<<<<<< HEAD
 ![](asesst/CC37.jpg)
+=======
+# Code Challenge: Class 38
+# DepthFirst
+  Conduct a depth first preorder traversal on a graph
+>>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
 
+ ## Challenge
+ - write a method that accepts an adjacency list as a graph.
+ - will conducts a depth first traversal. 
+ - return a collection of nodes in their pre-order depth-first traversal order.
+## Approach and Efficiency
+- Time : O(n * d) 
+  -  where d represents the degree of the graph.
+- Space : O(n) 
+  - as there are multiple data structures in place that will take more space in direct relation to the # of nodes in the graph.
+## Solution
+
+![](asesst/CC38.jpg)
