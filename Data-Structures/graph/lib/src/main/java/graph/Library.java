@@ -3,6 +3,10 @@
  */
 package graph;
 
+import GetEdge.GetEdge;
+
+import java.util.ArrayList;
+
 public class Library {
   public boolean someLibraryMethod() {
     return true;
@@ -11,11 +15,12 @@ public class Library {
 
   public static void main(String[] args) {
 //    int[] arr = {0, 1, 2, 0, 1, 2};
-    int[] arr = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};
-    sortArr(arr);
-    for (int i = 0; i < arr.length; i++) {
-      System.out.print(arr[i] + ",");
-    }
+//    int[] arr = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};
+//    sortArr(arr);
+//    for (int i = 0; i < arr.length; i++) {
+//      System.out.print(arr[i] + ",");
+//    }
+
   }
 
   public static void sortArr(int[] arr) {
@@ -52,6 +57,7 @@ public class Library {
 //      for (int j = zeros + ones; j < arr.length; j++) {
 //        arr[j] = 2;
 //      }
+
 
   }
 }
