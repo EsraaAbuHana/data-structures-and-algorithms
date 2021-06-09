@@ -57,7 +57,6 @@ public class LibraryTest {
     System.out.println(classUnderTest.addNode(vertex01).getValue());
     System.out.println(classUnderTest.addNode(vertex02).getValue());
     classUnderTest.addEdge(vertex01, vertex02, 3);
-
 //    System.out.println(classUnderTest.getVertices().get(vertex));
     assertEquals("[Edge{vertex=Vertex{value=2}, wight=3}]", classUnderTest.getNeighbors(vertex01).toString());
 
