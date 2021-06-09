@@ -77,11 +77,15 @@
  - Check is the trip possible with direct flights? If so.
  -  find the total trip cost.
 ## Approach and Efficiency
-
+- Time complexity :O(n * d)
+- Space :  O(1)
 ## Solution
+![](asesst/CC37.jpg)
+
 # Code Challenge: Class 38
 # DepthFirst
   Conduct a depth first preorder traversal on a graph
+
 
  ## Challenge
  - write a method that accepts an adjacency list as a graph.

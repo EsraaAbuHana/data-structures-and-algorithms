@@ -34,4 +34,5 @@ this.wight=wight;
   public void setWight(Object wight) {
     this.wight = wight;
   }
+
 }

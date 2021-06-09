@@ -6,70 +6,52 @@ import graph.Vertex;
 import stacksandqueues.Node;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
-public class GetEdge {
-  public static void main(String[] args) {
-    Graph graph=new Graph();
-    Vertex Pandora = new Vertex("Pandora");
-    graph.addNode(Pandora);
-    Vertex Arendelle = new Vertex("Arendelle");
-    graph.addNode(Arendelle);
-    Vertex Metroville = new Vertex("Metroville");
-    graph.addNode(Metroville);
-    Vertex Monstroplolis = new Vertex("Monstroplolis");
-    graph.addNode(Monstroplolis);
-    Vertex Narnia = new Vertex("Narnia");
-    graph.addNode(Narnia);
-    Vertex Naboo = new Vertex("Naboo");
-    graph.addNode(Naboo);
-    graph.addEdge(Pandora,Arendelle,150);
-    graph.addEdge(Arendelle,Metroville,99);
-    graph.addEdge(Arendelle,Monstroplolis,42);
-    graph.addEdge(Metroville,Monstroplolis,105);
-    graph.addEdge(Metroville,Narnia,37);
-    graph.addEdge(Metroville,Naboo,26);
-    graph.addEdge(Monstroplolis,Naboo,73);
-    graph.addEdge(Narnia,Naboo,250);
-    System.out.println(graph.getNeighbors(Pandora));
-    System.out.println(graph.getNeighbors(Arendelle));
-    System.out.println(graph.getVertices());
-    System.out.println(graph.getNodes());
-//    System.out.println(graph.);
-    String[] cityNames={"Metroville","Pandora"};
-    System.out.println("the cost is : "+getEdge(graph,cityNames));
+public class GetEdge extends Graph {
+  private static ArrayList visited = new ArrayList();
 
+  public static String checkTrip(Graph plan, ArrayList trip) {
+    visited = new ArrayList();
+    if (trip.size() < 2) return "UnValid trip";
+    int cost = 0;
+    for (int i = 0; i < trip.size() - 1; i++) {
+      ArrayList checkIfNeighbor = checkIfNeighbor(plan, (String) trip.get(i),(String) trip.get(i + 1));
+      if ((int) checkIfNeighbor.get(0) != 1) return "False, 0$";
+      cost = cost + (int) checkIfNeighbor.get(1);
+    }
+    return "True," + " " + cost + "$";
   }
-//  [Metroville, Pandora]	True, $82
-//[Arendelle, New Monstropolis, Naboo]	True, $115
-//[Naboo, Pandora]	False, $0
-//[Narnia, Arendelle, Naboo]	False, $
-  public static int getEdge(Graph graph,String[]cityNames){
-    int cost=0;
-Vertex locCity=null;
-//graph.getNeighbors(locCity);
-    for (Vertex city : (ArrayList<Vertex>) graph.getNodes()) {
-      if (city.getValue()== cityNames[0]) {
-        locCity = city;
-        System.out.println(locCity);
+
+  public static ArrayList checkIfNeighbor(Graph plan, String start, String end) {
+    ArrayList outputArray = new ArrayList();
+    outputArray.add(0);
+    outputArray.add(0);
+    for (Map.Entry item : plan.getVertices().entrySet()) {
+      if (((Vertex)item.getKey()).getValue().equals(start)) {
+        ArrayList current = (ArrayList) item.getValue();
+        checkValue(current, outputArray, end);
+      } else if (((Vertex)item.getKey()).getValue().equals(end)) {
+        ArrayList current = (ArrayList) plan.getNeighbors((Vertex) item.getKey());
+        checkValue(current, outputArray, start);
       }
     }
+    return outputArray;
+  }
 
-    for (int i = 1; i < cityNames.length; i++) {
-      for (Edge edge : (List<Edge>) graph.getNeighbors(locCity)) {
-        if (edge .getVertex().getValue()== cityNames[i]) {
-          System.out.println("*********************"+graph.getNeighbors(locCity));
-          System.out.println(edge.getVertex());
-          locCity = edge.getVertex();
-          cost=cost+(int)edge.getWight();
-
-          break;
+  private static void checkValue(ArrayList current, ArrayList outputArray, String value) {
+    for (int i = 0; i < current.size(); i++) {
+      if ((int) outputArray.get(0) == 0) {
+        if (((Edge) current.get(i)).getVertex().getValue().equals(value)) {
+          outputArray.set(0, 1);
+          outputArray.set(1, (int) outputArray.get(1) + (int) ((Edge) current.get(i)).getWight());
         }
       }
-
-
     }
-return cost;
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    return super.equals(obj);
+  }
 }
