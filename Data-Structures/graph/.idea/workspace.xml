@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="" />
     <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../tree/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +49,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-<<<<<<< HEAD
-=======
     <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/DepthFirstTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Stack.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/src/main/java/DepthFirst/DepthFirst.java" root0="FORCE_HIGHLIGHTING" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
     <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/Vertex.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/BreadthFirstTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/BreadthFirst.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Node.java" root0="FORCE_HIGHLIGHTING" />
-<<<<<<< HEAD
-    <setting file="file://$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/LibraryTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/Graph.java" root0="FORCE_HIGHLIGHTING" />
-=======
     <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/LibraryTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/Graph.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" root0="FORCE_HIGHLIGHTING" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
   </component>
   <component name="ProjectId" id="1t4OQQ77zYbVebRpllnqUH7o83k" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -87,14 +77,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.GetEdgeTest">
     <configuration name="GetEdgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-  <component name="RunManager" selected="JUnit.LibraryTest">
-    <configuration name="DepthFirstTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
       <module name="graph.lib.test" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="GetEdgeTest.GetEdgeForMultipleCitiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="DepthFirstTest.addTestMoreSeveralEdgesForNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
+    <configuration name="GetEdgeTest.GetEdgeForMultipleCitiesTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graph.lib.test" />
       <extension name="coverage">
         <pattern>
@@ -122,108 +102,38 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="graph" />
-<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="graph.GetEdgeTest" />
       <option name="METHOD_NAME" value="GetEdgeForMultipleCitiesTest" />
-=======
-      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
-      <option name="METHOD_NAME" value="addTestMoreSeveralEdgesForNode" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="GetEdgeTest.GetEdgeForOneCityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="DepthFirstTest.addTestMoreThanOneNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
-      <module name="graph.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="graph.GetEdgeTest" />
-      <option name="METHOD_NAME" value="GetEdgeForOneCityTest" />
-=======
-      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
-      <option name="METHOD_NAME" value="addTestMoreThanOneNode" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="GetEdgeTest.GetEdgeUnValidCitesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="DepthFirstTest.addTestWithOneNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
-      <module name="graph.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="graph.GetEdgeTest" />
-      <option name="METHOD_NAME" value="GetEdgeUnValidCitesTest" />
-=======
-      <option name="MAIN_CLASS_NAME" value="graph.DepthFirstTest" />
-      <option name="METHOD_NAME" value="addTestWithOneNode" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="GetEdgeTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
-      <module name="graph.lib.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="graph.GetEdgeTest" />
-      <option name="METHOD_NAME" value="addTest" />
-      <option name="TEST_OBJECT" value="method" />
-=======
-      <option name="MAIN_CLASS_NAME" value="graph.LibraryTest" />
+    <configuration name="GetEdgeTest.GetEdgeForMultipleCitiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="class" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetEdgeTest.GetEdgeForOneCityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetEdgeTest.GetEdgeUnValidCitesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
         <item itemvalue="JUnit.GetEdgeTest" />
+        <item itemvalue="JUnit.GetEdgeTest.GetEdgeForMultipleCitiesTest (1)" />
         <item itemvalue="JUnit.GetEdgeTest.GetEdgeUnValidCitesTest" />
         <item itemvalue="JUnit.GetEdgeTest.GetEdgeForOneCityTest" />
         <item itemvalue="JUnit.GetEdgeTest.GetEdgeForMultipleCitiesTest" />
-        <item itemvalue="JUnit.GetEdgeTest.addTest" />
-=======
-        <item itemvalue="JUnit.LibraryTest" />
-        <item itemvalue="JUnit.DepthFirstTest.addTestMoreThanOneNode" />
-        <item itemvalue="JUnit.DepthFirstTest.addTestWithOneNode" />
-        <item itemvalue="JUnit.DepthFirstTest.addTestMoreSeveralEdgesForNode" />
-        <item itemvalue="Application.DepthFirstTest" />
->>>>>>> 61b60b53816740f8b8767219bf5e1e949dedc124
       </list>
     </recent_temporary>
   </component>
