@@ -3,6 +3,8 @@ package LeftJoin;
 import hashtable.Hashtable;
 import linkedList.LinkedList;
 
+import java.util.ArrayList;
+
 public class LeftJoin {
   public static void main(String[] args) {
     Hashtable left = new Hashtable();
@@ -12,6 +14,10 @@ public class LeftJoin {
     left.add("n", "n");
     left.add("groot", "esraa");
     left.add("b", "bee");
+    System.out.println(left.getHashNodesList().length);
+    System.out.println(left.value("hi"));
+    System.out.println(left.get("hi"));
+        System.out.println(right.get(left.getHashNodesList()[933]));
 
     right.add("hi", "hello");
     right.add("a", "yah");
@@ -33,8 +39,8 @@ public class LeftJoin {
     System.out.println(right.get(left.getHashNodesList()[933]));
     System.out.println(left);
 //    System.out.println(left.getHashNodesListValues());
-    leftJoin(left,right);
-    System.out.println( leftJoin(left,right));
+    leftJoin(left, right);
+    System.out.println(leftJoin(left, right));
   }
 
   //  LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row.
@@ -42,22 +48,39 @@ public class LeftJoin {
 //  The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below,
 //  so long as it achieves the LEFT JOIN logic.
 //  Avoid utilizing any of the library methods available to your language.
+//  public static String[][] leftJoin(Hashtable left, Hashtable right) {
+//    ArrayList<String> keys = new ArrayList<>();
+//    String[][] joined = new String[keys.size()][3];
+//    for (int i = 0; i < left.getHashNodesList().length; i++) {
+//      if (left.getHashNodesList()[i]!=null) {
+//        joined[i][0] = (String) left.get(i);
+//        joined[i][1] = (String) left.get(i);
+//        if (right.contains(left.getHashNodesList()[i])) {
+//          joined[i][2] = (String) right.get(i);
+//        }else {
+//          joined[i][2] = null;
+//        }
+//      }
+//    }
+//    return joined;
+//}
+//}
   public static Hashtable leftJoin(Hashtable left, Hashtable right) {
     Hashtable output = new Hashtable();
 //    LinkedList output= new LinkedList();
 //String[][] output=
 //    System.out.println(right.get(left.get("n")));
     String[]values;
-if( left.getHashNodesList().length>0){
-    for (int i = 0; i < left.getHashNodesList().length; i++) {
-      output.add(left.getHashNodesList()[i], left.getHashNodesList()[i]);
-      if (right.contains(left.get(right.get(left.getHashNodesList()[i])))){
-        output.add(left.getHashNodesList()[i], right.get(left.getHashNodesList()[i]));
-      }else {
-        output.add(left.getHashNodesList()[i], "NULL");
+    if( left.getHashNodesList().length>0){
+      for (int i = 0; i < left.getHashNodesList().length; i++) {
+        output.add(left.getHashNodesList()[i], left.getHashNodesList()[i]);
+        if (right.contains(left.get(right.get(left.getHashNodesList()[i])))){
+          output.add(left.getHashNodesList()[i], right.get(left.getHashNodesList()[i]));
+        }else {
+          output.add(left.getHashNodesList()[i], "NULL");
+        }
       }
     }
-  }
     return output;
   }
 }
