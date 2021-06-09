@@ -77,6 +77,8 @@
  - Check is the trip possible with direct flights? If so.
  -  find the total trip cost.
 ## Approach and Efficiency
-
+- Time complexity :O(n * d)
+- Space :  O(1)
 ## Solution
+![](asesst/CC37.jpg)
 

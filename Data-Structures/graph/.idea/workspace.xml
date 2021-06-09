@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/test/java/graph/GetEdgeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/graph/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/graph/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/graph/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/graph/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tree/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,15 +183,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java</url>
-          <line>14</line>
-          <properties class="GetEdge.GetEdge" method="checkFullTripPossibility">
+          <line>13</line>
+          <properties class="GetEdge.GetEdge" method="checkTrip">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java</url>
-          <line>26</line>
+          <line>25</line>
           <properties class="GetEdge.GetEdge" method="checkIfNeighbor">
             <option name="EMULATED" value="true" />
           </properties>
@@ -203,7 +199,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java</url>
-          <line>42</line>
+          <line>41</line>
           <properties class="GetEdge.GetEdge" method="checkValue">
             <option name="EMULATED" value="true" />
           </properties>
