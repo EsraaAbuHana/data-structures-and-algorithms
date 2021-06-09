@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../tree/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="378fb049-4bca-45af-b9a7-538f785f9b51" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +44,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/Vertex.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/BreadthFirstTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/BreadthFirst.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Node.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/GetEdge/GetEdge.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/graph/LibraryTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/graph/Graph.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1t4OQQ77zYbVebRpllnqUH7o83k" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
