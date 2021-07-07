@@ -20,7 +20,7 @@ public class Prac {
     System.out.println(str);
     HashMap<Character, Integer> arr = new HashMap();
     for (int i = 0; i < str.length(); i++) {
-      if ((str.toLowerCase().charAt(i) == ' ')||(str.toLowerCase().charAt(i) == ',')||(str.toLowerCase().charAt(i) == '.')) {
+      if ((str.toLowerCase().charAt(i) == ' ') || (str.toLowerCase().charAt(i) == ',') || (str.toLowerCase().charAt(i) == '.')) {
         continue;
       } else if ((arr.containsKey(str.toLowerCase().charAt(i)))) {
         arr.replace(str.toLowerCase().charAt(i), arr.get(str.toLowerCase().charAt(i)) + 1);
@@ -28,12 +28,13 @@ public class Prac {
         arr.put(str.toLowerCase().charAt(i), 1);
       }
     }
-    HashMap<Character,Integer> arr2=new HashMap();
+    HashMap<Character, Integer> arr2 = new HashMap();
     arr.forEach((k, v) -> {
-      if(v>1)arr2.put(k,v);
+      if (v > 1) arr2.put(k, v);
     });
     return arr2;
   }
+
   public static boolean containsDigit(String s) {
     //BEST
     boolean containsDigit = false;
@@ -46,14 +47,16 @@ public class Prac {
     }
     return !containsDigit;
   }
+
   public static boolean containsDigit2(String s) {
-  boolean check=false;
-  for (char c :s.toCharArray()){
-    if(check=Character.isDigit(c))break;
+    boolean check = false;
+    for (char c : s.toCharArray()) {
+      if (check = Character.isDigit(c)) break;
+    }
+    return check;
   }
-  return check;
-  }
-//  public static boolean containsDigit2(String s) {
+
+  //  public static boolean containsDigit2(String s) {
 //    return !(s.contains("0") || s.contains("1") || s.contains("2") || s.contains("3") || s.contains("4") || s.contains("5") || s.contains("6") || s.contains("7") || s.contains("8") || s.contains("9"));
 //  }
 //  public static boolean containsDigit3(String s) {
@@ -64,16 +67,18 @@ public class Prac {
 //  }
   public static void swap(int x, int y) {
     // x=5 y=6
-    System.out.println(" a : "+ x+" b : "+y);
-    x=x+y; //x=11
-    y=x-y; //y=5
-    x=x-y; //x=6
-    System.out.println(" a : "+ x+" b : "+y);
+    System.out.println(" a : " + x + " b : " + y);
+    x = x + y; //x=11
+    y = x - y; //y=5
+    x = x - y; //x=6
+    System.out.println(" a : " + x + " b : " + y);
 
   }
+
   public static boolean sameThirdNum(String a, String b, String c) {
     return (Integer.parseInt(a) + Integer.parseInt(b) == Integer.parseInt(c));
   }
+
   public static int secondMax(ArrayList<Integer> arr) {
     int max = Integer.MIN_VALUE, sec = Integer.MIN_VALUE;
     for (int i = 0; i < arr.size(); i++) {
@@ -85,13 +90,15 @@ public class Prac {
     }
     return sec;
   }
+
   public static int secondMax2(ArrayList<Integer> arr) {
- arr.sort(Comparator.reverseOrder());
+    arr.sort(Comparator.reverseOrder());
     for (int i = 0; i < arr.size(); i++) {
-      if(arr.get(i)<arr.get(0))return arr.get(i);
+      if (arr.get(i) < arr.get(0)) return arr.get(i);
     }
     return arr.get(0);
   }
+
   public static int findRoot(int num) {
     for (int i = (int) Math.floor(num / 2); i > 1; i--) {
       if (num % i == 0 && i * i == num) {
@@ -100,6 +107,7 @@ public class Prac {
     }
     return -1;
   }
+
   public static boolean checkPrime(int num) {
     for (int i = num - 1; i > 1; i--) {
       if (num % i == 0) {
@@ -108,6 +116,7 @@ public class Prac {
     }
     return true;
   }
+
   public static ArrayList findPrime(int num) {
     ArrayList result = new ArrayList();
     for (int i = num; i > 1; i--) {
@@ -117,8 +126,9 @@ public class Prac {
     }
     return result;
   }
+
   public static String checkUnMutual(String str1, String str2) {
-    StringBuilder container= new StringBuilder();
+    StringBuilder container = new StringBuilder();
     HashMap<Character, Integer> hashMap = new HashMap();
     for (int i = 0; i < str1.length(); i++) {
       if (str1.toLowerCase().charAt(i) == ' ') {
@@ -129,103 +139,96 @@ public class Prac {
         hashMap.put(str1.toLowerCase().charAt(i), 1);
       }
     }
-    for(int i=0;i<str2.length();i++){
-      if(str2.toLowerCase().charAt(i)==' '){
+    for (int i = 0; i < str2.length(); i++) {
+      if (str2.toLowerCase().charAt(i) == ' ') {
         continue;
-      }
-      else if (hashMap.get(str2.toLowerCase().charAt(i)) !=null && hashMap.get(str2.toLowerCase().charAt(i)) >0){
-        hashMap.replace(str2.toLowerCase().charAt(i),hashMap.get(str2.toLowerCase().charAt(i))-1);
+      } else if (hashMap.get(str2.toLowerCase().charAt(i)) != null && hashMap.get(str2.toLowerCase().charAt(i)) > 0) {
+        hashMap.replace(str2.toLowerCase().charAt(i), hashMap.get(str2.toLowerCase().charAt(i)) - 1);
 
       } else {
         container.append(str2.toLowerCase().charAt(i));
       }
     }
-    hashMap.forEach((k,v)->{
-      if(v!=0){
-        for (int i=0; i<v;i++){
+    hashMap.forEach((k, v) -> {
+      if (v != 0) {
+        for (int i = 0; i < v; i++) {
           container.append(k);
         }
       }
     });
     return container.toString();
   }
+
   public static String reverseWords(String words) {
-    String reverseString="";
-    String substring[]=words.split(" ");
-    for(int i=(substring.length-1);i>=0;i--)
-    {
-      reverseString = reverseString + substring[i]+" ";
+    String reverseString = "";
+    String substring[] = words.split(" ");
+    for (int i = (substring.length - 1); i >= 0; i--) {
+      reverseString = reverseString + substring[i] + " ";
     }
     return reverseString;
   }
-  public static String mostRepeated(String str){
-    int max =0;
-    String repeate=" ";
-    HashMap<String,Integer> hashMap = new HashMap<>();
+
+  public static String mostRepeated(String str) {
+    int max = 0;
+    String repeate = " ";
+    HashMap<String, Integer> hashMap = new HashMap<>();
     String words[] = str.split(" ");
-    for (int i=0;i<words.length;i++){
-      if (hashMap.get(words[i].toLowerCase())!=null){
-        hashMap.replace(words[i].toLowerCase(),hashMap.get(words[i].toLowerCase())+1);
-        if(hashMap.get(words[i])>max){
-          max=hashMap.get(words[i]);
-          repeate=words[i];
+    for (int i = 0; i < words.length; i++) {
+      if (hashMap.get(words[i].toLowerCase()) != null) {
+        hashMap.replace(words[i].toLowerCase(), hashMap.get(words[i].toLowerCase()) + 1);
+        if (hashMap.get(words[i]) > max) {
+          max = hashMap.get(words[i]);
+          repeate = words[i];
         }
 
       } else {
-        hashMap.put(words[i].toLowerCase(),1);
+        hashMap.put(words[i].toLowerCase(), 1);
       }
     }
     return repeate;
   }
-  //123 1^3+2^3+3^3 = 123 true
-  public static boolean checkNumber(int num){
-    List<Integer> digits = new ArrayList<Integer>();
-    while(num > 0) {
-      digits.add(num % 10);
-      num /= 10;
-    }
-    int total=0;
-    for (int i=0;i<digits.size();i++){
-      total+=Math.pow(digits.get(i),3);
-    }
-    if (total==num) {
-      return true;
-    }
-    return false;
-  }
-  public static boolean bracketsMatch(String brackets)
-  {
-    int leftCtr = 0 ;  //"{";
-    int rightCtr =0 ; // "}";
 
-    for (int i=0; i<brackets.length(); i++)
-    {
+  //123 1^3+2^3+3^3 = 123 true
+  public static boolean checkNumber(int num) {
+    int c = num, total = 0;
+    List<Integer> digits = new ArrayList<Integer>();
+    while (c > 0) {
+      digits.add(c % 10);
+      c /= 10;
+    }
+    for (int i = 0; i < digits.size(); i++) total += Math.pow(digits.get(i), digits.size());
+    return num == total;
+  }
+
+  public static boolean bracketsMatch(String brackets) {
+    int leftCtr = 0;  //"{";
+    int rightCtr = 0; // "}";
+
+    for (int i = 0; i < brackets.length(); i++) {
       char c = brackets.charAt(i);
-      if ( c == '{')
-      {
+      if (c == '{') {
         leftCtr++;
       }
-      if (c =='}')
-      {
+      if (c == '}') {
         rightCtr++;
       }
     }
 
-    if (rightCtr==leftCtr)
-    {
+    if (rightCtr == leftCtr) {
       return true;
     }
     return false;
   }
+
   public static void main(String[] args) {
-    ArrayList<Integer> arr=new ArrayList<>();
+    ArrayList<Integer> arr = new ArrayList<>();
     arr.add(30);
     arr.add(30);
     arr.add(30);
     arr.add(30);
     arr.add(30);
-    int a=6,b=8;
-    swap(a,b);
+    int a = 6, b = 8;
+    swap(a, b);
 //   System.out.println(countChar("hello World aa"));
 //   System.out.println(containsDigit2("hello World "));
 //   System.out.println(containsDigit2("hello World "));
@@ -237,10 +240,12 @@ public class Prac {
 //    System.out.println(sameThirdNum("5","5","9"));
 //*   System.out.println(secondMax(arr));
 //    System.out.println(secondMax2(arr));
+    System.out.println(checkNumber(153));
+    System.out.println(checkNumber(155));
+
 // " whenever you find Ayah you will find Sasha"
 // " whenever you find Esraa you will find Spaghetti"
 // "Aya Esraa Sasha Spaghetti"
-
 
 
   }
